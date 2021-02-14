@@ -26,10 +26,11 @@ We offer the following solutions:
 <!--IMPLEMENTATION  -->
 ## Implementation 
 * Scope of the project: 3 months
+* Type of the user-interface: Web-oriented application
 1) User login/authorization
 2) The ability for the user to fill in and send the form with the time spent, as well as calculate the remaining time.
 3) The administrator should be able to see all employees and their working hours
-* Type of the user-interface: Web-oriented application
+<br />
 
 <!--BUILT WITH  -->
 ## Built with
