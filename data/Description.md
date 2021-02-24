@@ -27,10 +27,10 @@ It was important for us to choose a set of data that we can use in the future. S
 
 <h3>Structure of tables</h3>
 
-1. Employee table 
-<div style="text-align:center">
+<h3>Employee table</h3> 
+<div style="text-align: center">
    
-   <i>1) employeeID - primary key - ID of employee</i><br />
+  <i>1) employeeID - primary key - ID of employee</i><br />
   <i>2) fullName - Fullname of employee</i><br />
   <i>3) gender - gender of employee</i><br />
   <i>4) jobID - foreign key - for position in job of employee</i><br />
@@ -39,6 +39,32 @@ It was important for us to choose a set of data that we can use in the future. S
   <i>7) yearsAtCompany - Total number of years spent at the company by the employee</i><br />
   <i>8) yearsSinceLastPromotion - Number of years since last promotion</i><br />
   <i>9) yearsWithCurrManager -Number of years under current manager</i><br />
+  
+<h3>Employee_activity table</h3> 
+<div style="text-align: center">
+   
+  <i>1) employeeID - foreign key - ID of employee</i><br />
+  <i>2) jobID - foreign key - for position in job of employee</i><br />
+  <i>3) performanceRating - Performance rating for last year</i><br />
+  <i>4) spentTime - spent time for activity</i><br />
+  <i>5) standardHours - Standard hours of work for the employee</i><br />
+  <i>6) totalWorkingYears - Total number of years the employee has worked so far</i><br />
+  <i>7) inTime - entered time of employee</i><br />
+  <i>8) outTime - leaved time of employee</i><br />
+
+</div>
+
+<h3>Employee_activity table</h3> 
+<div style="text-align: center">
+   
+  <i>1) employeeID - foreign key - ID of employee</i><br />
+  <i>2) jobID - foreign key - for position in job of employee</i><br />
+  <i>3) performanceRating - Performance rating for last year</i><br />
+  <i>4) spentTime - spent time for activity</i><br />
+  <i>5) standardHours - Standard hours of work for the employee</i><br />
+  <i>6) totalWorkingYears - Total number of years the employee has worked so far</i><br />
+  <i>7) inTime - entered time of employee</i><br />
+  <i>8) outTime - leaved time of employee</i><br />
 
 </div>
 3. Clone the repo
