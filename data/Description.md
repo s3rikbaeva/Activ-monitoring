@@ -5,7 +5,19 @@
 ## Questions 
 1) How many specific developers are currently out of work for a <i>given project</i> in a <i>given period</i>?
 2) How long a certain developer worked on a <i>certain project</i> over a <i>certain period</i> of time?
-3) 
+3) How many remaining hours of a particular project are subtracting the hours spent from the total expected?
+4) How many reports are made by a certain developer and their description in a certain period of time for the specified project?
+5) Which is the list of developers currently in development for the project specified by the project manager?
+6) What is the time data of the projects that were changed in a certain period of time, and their description?
+7) What types, description, and number of projects a particular developer is working on during a specified time period?
+8) What is the time of the last login of a particular developer along with its full name job number?
+9) What is the specific project number, the developer and manager who worked on the specified project, and the amount of time spent on it during the specified time period?
+10) What is the number and number of employees who work more or less than a certain time in the company?
+11) What is the education and training time in the past year of a developer and a manager who work on the same project?
+12) What is the marital status of all developers under development of the project?
+13) What is the number of the manager and the project that he worked on in a certain period of time?
+14) What is the number of the developer, his level and role of work in the specified project with the number of this activity?
+15) Which employees had the same level of work in a particular project in a particular time period?
 <br />
 
 
