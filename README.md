@@ -40,7 +40,6 @@
 ## Goal of the project
 Help developers discover the problem in time, evaluate it, give them the opportunity to suggest a solution, and avoid costly fixes without losing their way. As a result, the main goal is to develop the project in a <b>fixed time</b>, at a price and with a given <b>functionality</b> and <b>quality</b>.
 
-
 We offer the following solutions:
 * Correct calculation of time and effort for each project.
 * Monitoring the performance of each employee of your company :speech_balloon:
@@ -78,5 +77,13 @@ We chose PHP for the backend, as we had previously worked with this programming 
 <!--UML diagram  -->
 ## UML diagram 
 
+<details>
+<summary>Database</summary>
+
+![](/docs/drawio/MentorshipDatabase.drawio.svg)
+
+</details>
+
 <br />
+
 
