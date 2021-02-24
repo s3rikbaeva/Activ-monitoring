@@ -100,6 +100,13 @@ It was important for us to choose a set of data that we can use in the future. S
 <a href="/data/dataset/employee_additional_info.csv">Employee additional info</a>
 
 <b>The size of each data set takes up almost 6000 data, which have completely different dimensions.</b>
+<h4>Initial ERD diagram </h4>
+<details>
+<summary>ERD diagram</summary>
+
+![](/data/TripleA-ERD diagram.png)
+
+</details>
 
 <h3>Structure of tables</h3>
 
