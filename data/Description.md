@@ -67,19 +67,30 @@ It was important for us to choose a set of data that we can use in the future. S
   <i>8) outTime - leaved time of employee</i><br />
 
 </div>
-3. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
+<h3>Employee_additional_info table</h3> 
+<div style="text-align: center">
+   
+  <i>1) employeeID - foreign key - ID of employee</i><br />
+  <i>2) education - Education Level</i><br />
+  <i>3) maritalStatus - Marital status of the employee</i><br />
+  <i>4) monthlyIncome - Monthly income in rupees per month</i><br />
+  <i>5) numCompaniesWorked - Total number of companies the employee has worked for</i><br />
+  <i>6) environmentSatisfaction - Work Environment Satisfaction Level</i><br />
+  <i>7) trainingTimesLastYear - Number of times training was conducted for this employee last year</i><br />
+
+</div>
+
+<h3>Job table</h3> 
+<div style="text-align: center">
+   
+  <i>1) jobID - primary key - ID of job</i><br />
+  <i>2) jobInvolvement - Job Involvement Level</i><br />
+  <i>3) jobLevel - Job level at company on a scale of 1 to 5</i><br />
+  <i>4) jobRole - Name of job role in company</i><br />
+  <i>5) jobSatisfaction - Job Satisfaction Level</i><br />
+
+</div>
 
 <!--UML diagram  -->
 ## UML diagram 
