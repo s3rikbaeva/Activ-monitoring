@@ -28,6 +28,19 @@ It was important for us to choose a set of data that we can use in the future. S
 <h3>Structure of tables</h3>
 
 1. Employee table 
+<div style="text-align:center">
+   
+   <i>1) employeeID - primary key - ID of employee</i><br />
+  <i>2) fullName - Fullname of employee</i><br />
+  <i>3) gender - gender of employee</i><br />
+  <i>4) jobID - foreign key - for position in job of employee</i><br />
+  <i>5) companyID - foreign key - where employee works</i><br />
+  <i>6) distanceFromHome - Distance from home in kms</i><br />
+  <i>7) yearsAtCompany - Total number of years spent at the company by the employee</i><br />
+  <i>8) yearsSinceLastPromotion - Number of years since last promotion</i><br />
+  <i>9) yearsWithCurrManager -Number of years under current manager</i><br />
+
+</div>
 3. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
