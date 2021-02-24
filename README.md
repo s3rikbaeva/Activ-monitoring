@@ -13,9 +13,33 @@
   </p>
 </p>
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a >Project description and data preparation</a>
+      <ul>
+        <li><a href="#goal-of-the-project">Goal of the project</a></li>
+        <li><a href="#implementation">Implementation</a></li>
+        <li><a href="#built-with">Built with</a></li>
+      </ul>
+    </li>
+    <li>
+      <a >Project Use-Case diagram and questions over the data</a>
+      <ul>
+        <li><a href="#questions">Questions</a></li>
+        <li><a href="#dataset">Dataset</a></li>
+        <li><a href="#uml-diagram">UML diagram </a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
 <!-- GOAL OF THE PROJECT -->
 ## Goal of the project
 Help developers discover the problem in time, evaluate it, give them the opportunity to suggest a solution, and avoid costly fixes without losing their way. As a result, the main goal is to develop the project in a <b>fixed time</b>, at a price and with a given <b>functionality</b> and <b>quality</b>.
+
 
 We offer the following solutions:
 * Correct calculation of time and effort for each project.
@@ -39,3 +63,20 @@ We offer the following solutions:
 *[PHP](https://www.php.net/)*
 
 We chose PHP for the backend, as we had previously worked with this programming language.
+
+<!--QUESTIONS  -->
+## Questions 
+
+<br />
+
+
+<!--DATASET  -->
+## Dataset 
+
+<br />
+
+<!--UML diagram  -->
+## UML diagram 
+
+<br />
+
