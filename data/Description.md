@@ -106,6 +106,21 @@ It was important for us to choose a set of data that we can use in the future. S
 
 <!--UML diagram  -->
 ## UML diagram 
+1. The system outputs the data to the project manager, which will contain developers who do not have a certain amount of working time.
+2. The system outputs data to the project manager, which will show the amount of time the developer has worked on the project for a certain amount of time to monitor the number of hours of work.
+3. The system makes an estimate of the remaining time of the specified project and outputs the information to the project manager.
+4. The manager can find out about the developer's reports and their details by the specified date that the system will issue.
+5. The system outputs data to the project manager, which will contain developers who have a certain amount of working time.
+6. The manager can find out about certain postponed activity times issued by the system.
+7. The manager can learn more about the developer's work using the system.
+8. The system can give the developer information about his last login.
+9. Employees can get information about the project and the people who worked on it and how much time was spent on this project.
+10. The system gives the manager information about the duration of the employee's work in the company.
+11. The system can give information to the observer or the manager about the education of an employee.
+12. The system displays complete information about the developers to the manager.
+13. The system gives information about the project numbers and the manager who worked on it.
+14. The system gives out the number of the developer and the project, the level and role of the employee who works on this activity.
+15. The system provides information about the level of the employee in a certain period of time and the project.
 
 <details>
 <summary>UML diagram</summary>
