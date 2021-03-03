@@ -160,7 +160,7 @@ It was important for us to choose a set of data that we can use in the future. S
   <i>4) monthlyIncome - Monthly income in rupees per month</i><br />
   <i>5) numCompaniesWorked - Total number of companies the employee has worked for</i><br />
   <i>6) environmentSatisfaction - Work Environment Satisfaction Level</i><br />
-  <i>7) trainingTimesLastYear - Number of times training was conducted for this employee last year</i><br />
+  <i>7) trainingTimesLastYear - Number of Times training was conducted for this employee last year</i><br />
 
 </div>
 
