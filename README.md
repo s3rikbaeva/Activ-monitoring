@@ -104,7 +104,7 @@ It was important for us to choose a set of data that we can use in the future. S
 <details>
 <summary>ER diagram</summary>
 
-![](/data/ER-presubmit.jpg)
+![](/docs/TripleA-ER.png)
 
 </details>
 
@@ -196,7 +196,7 @@ It was important for us to choose a set of data that we can use in the future. S
 <details>
 <summary>UML diagram</summary>
 
-![](/data/TripleA-UseCase-UML.png)
+![](/docs/TripleA-UseCase-UML.png)
 
 </details>
 
