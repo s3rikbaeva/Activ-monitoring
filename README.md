@@ -104,7 +104,7 @@ It was important for us to choose a set of data that we can use in the future. S
 <details>
 <summary>ER diagram</summary>
 
-![](/data/ActivMonitoringERD.png)
+![](/data/ER-presubmit.jpg)
 
 </details>
 
