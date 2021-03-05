@@ -25,15 +25,15 @@
 ## Dataset 
 It was important for us to choose a set of data that we can use in the future. Since there was no information on the Internet about the company's employees and their projects(including each employee's working hours and work efficiency), we decided to generate our own data. Which you can view in the following files:
 
-<a href="/data/dataset/employee.csv">Employee</a>
+<a href="/docs/dataset/employee.csv">Employee</a>
 <br />
-<a href="/data/dataset/job.csv">Job</a>
+<a href="/docs/dataset/job.csv">Job</a>
 <br />
-<a href="/data/dataset/company.csv">Company</a>
+<a href="/docs/dataset/company.csv">Company</a>
 <br />
-<a href="/data/dataset/employee_activity.csv">Employee activity</a>
+<a href="/docs/dataset/employee_activity.csv">Employee activity</a>
 <br />
-<a href="/data/dataset/employee_additional_info.csv">Employee additional info</a>
+<a href="/docs/dataset/employee_additional_info.csv">Employee additional info</a>
 
 <b>The size of each data set takes up almost 6000 data, which have completely different dimensions.</b>
 
@@ -125,7 +125,7 @@ It was important for us to choose a set of data that we can use in the future. S
 <details>
 <summary>UML diagram</summary>
 
-![](/data/TripleA-UseCase-UML.png)
+![](/docs/TripleA-UseCase-UML.png)
 
 </details>
 
