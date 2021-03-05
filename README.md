@@ -36,7 +36,7 @@
     <li>
       <a href="#data-modeling-and-database-design">Data modeling and database design</a>
       <ul>
-        <li><a href="#er-diagram">ER diagram's</a></li>
+        <li><a href="#er-diagram">ER diagram</a></li>
         <li><a href="#ddl-queries">DDL queries</a></li>
         <li><a href="#dml-queries">DML queries</a></li>
       </ul>
@@ -134,7 +134,8 @@ It was important for us to choose a set of data that we can use in the future. S
   <i>4) lasName - VARCHAR(50) - last name of employee</i><br />
   <i>5) gender - CHAR(2) - gender of employee (M/F) </i><br />
   <i>6) yearsAtCompany - INT(2)- Total number of years spent at the company by the employee</i><br />
-  
+
+</div>
 <h3>Employee_record table</h3> 
 <div style="text-align: center">
    
@@ -154,57 +155,57 @@ It was important for us to choose a set of data that we can use in the future. S
    
   <i>1) employeeAdditionalInfoID - foreign key - INT(11) -  ID of employee</i><br />
   <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
-  <i>3) education - INT(2)- Education Level (1-'Below College'; 2-'College'; 3-'Bachelor';4-'Master'; 5-'Doctor');<i><br />
-  <i>4) maritalStatus - VARCHAR(5) - Marital status of the employee</i><br />
-  <i>5) monthlyIncome - INT(10) - Monthly income in rupees per month</i><br />
-  <i>6) environmentSatisfaction - INT(5) - Work Environment Satisfaction Level</i><br />
-  <i>7) trainingTimesLastYear - INT(5) - Number of Times training was conducted for this employee last year</i><br />
+  <i>3) education - INT(2)- Education Level (1-'Below College'; 2-'College'; 3-'Bachelor'; 4-'Master'; 5-'Doctor') <i><br />
+  <i>4) maritalStatus - VARCHAR(5) - Marital status of the employee </i><br />
+  <i>5) monthlyIncome - INT(10) - Monthly income in rupees per month </i><br />
+  <i>6) environmentSatisfaction - INT(5) - Work Environment Satisfaction Level </i><br />
+  <i>7) trainingTimesLastYear - INT(5) - Number of Times training was conducted for this employee last year </i><br />
 
 </div>
 
 <h3>Job table</h3> 
 <div style="text-align: center">
    
-  <i>1) jobID - primary key - INT(11) - ID of job</i><br />
-  <i>2) jobLevel - INT(5) - Job level at company on a scale of 1 to 5</i><br />
-  <i>3) jobRole - VARCHAR(11) - Name of job role in company</i><br />
+  <i>1) jobID - primary key - INT(11) - ID of job </i><br />
+  <i>2) jobLevel - INT(5) - Job level at company on a scale of 1 to 5 </i><br />
+  <i>3) jobRole - VARCHAR(11) - Name of job role in company </i><br />
 
 </div>
 
 <h3>Task table</h3> 
 <div style="text-align: center">
    
-  <i>1) taskID - primary key - INT(11) - ID of task</i><br />
-  <i>2) jobID - foreign key - INT(11) - ID of job</i><br />
-  <i>3) employeeRecordID - foreign key - INT(11) - ID of record</i><br />
-  <i>4) taskDescription - VARCHAR(50) - Description of the activity performed by the employee</i><br />
+  <i>1) taskID - primary key - INT(11) - ID of task </i><br />
+  <i>2) jobID - foreign key - INT(11) - ID of job </i><br />
+  <i>3) employeeRecordID - foreign key - INT(11) - ID of record </i><br />
+  <i>4) taskDescription - VARCHAR(50) - Description of the activity performed by the employee </i><br />
 
 </div>
 
 <h3>Manager table</h3> 
 <div style="text-align: center">
    
-  <i>1) managerID - primary key - INT(11) - ID of manager</i><br />
-  <i>2) name - VARCHAR(50) - Name of manager</i><br />
+  <i>1) managerID - primary key - INT(11) - ID of manager </i><br />
+  <i>2) name - VARCHAR(50) - Name of manager </i><br />
 
 </div>
 
 <h3>Project table</h3> 
 <div style="text-align: center">
    
-  <i>1) projectID - primary key - INT(11) - ID of manager</i><br />
-  <i>2) employeeID - foreign key - INT(11) - ID of employee</i><br />
-  <i>3) managerID - foreign key - INT(11) - ID of manager</i><br />
-  <i>4) projectName - VARCHAR(50) - project name</i><br />
+  <i>1) projectID - primary key - INT(11) - ID of manager </i><br />
+  <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
+  <i>3) managerID - foreign key - INT(11) - ID of manager </i><br />
+  <i>4) projectName - VARCHAR(50) - project name </i><br />
 </div>
 
 <h3>Company table</h3> 
 <div style="text-align: center">
    
-  <i>1) companyID - primary key - INT(11) - ID of company</i><br />
-  <i>2) employeeID - foreign key - INT(11) - ID of employee</i><br />
-  <i>3) name - VARCHAR(50) - Company name</i><br />
-  <i>4) employeeNumber - INT(5) - Employee number</i><br />
+  <i>1) companyID - primary key - INT(11) - ID of company </i><br />
+  <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
+  <i>3) name - VARCHAR(50) - Company name </i><br />
+  <i>4) employeeNumber - INT(5) - Employee number </i><br />
 </div>
 
 
@@ -238,19 +239,18 @@ It was important for us to choose a set of data that we can use in the future. S
 <!-- Data modeling and database design -->
 # Data modeling and database design
 
-## ER diagram's
-  When designing our diagram, it was important for us to choose the <b>right attributes</b> for each table and build the <b>right relationships</b> between the tables.We also decided to implement diagrams in two types, `class` and `figure`. The solution was to highlight the following tables, which are given below:
-<details>
-<summary>ER diagram</summary>
+## ER diagram
+  <h4>When designing our diagram, it was important for us to choose the <b>right attributes</b> for each table and build the <b>right relationships</b> between the tables.We also decided to implement diagrams in two types, `class` and `figure`. The solution was to highlight the following tables, which are given below:
+<details></h4>
+<summary>ER diagram(figure-shape)</summary>
 
 ![](/docs/TripleA-ER.png)
 
 </details>
 
    The main performer is the Employee and the less important table for recording the Employee_record activity, which is linked by a 1-to-Many relationship, where the Employee can record multiple reports on a particular job. Also, in each Employee_record, there is a specific task that the Employee has done. The task is related to the work(from the part). Therefore, it was decided to build the logic for example,
-     ```sh
-  The job can be divided into tasks (1-to-Many), and for each task there is a record (1-to-Many), which is performed by an Employee(1-to-Many).
-     ```
+   
+   The job can be divided into tasks (1-to-Many), and for each task there is a record (1-to-Many), which is performed by an Employee(1-to-Many).
      
    Also, there is a certain part with the Project Manager, because the PM can contact the Employee using the Project. And for each Employee's relationship with the PM, there is a specific project (1-to-Many), while for an employee there may be several projects, or vice versa, several Employees are allocated for the project(Many-to-Many). Ultimately, the ratio between a Company and an Employee remains Many-to-Many, since one employee can work in multiple Companies, just as a Company employs multiple employees.
 
