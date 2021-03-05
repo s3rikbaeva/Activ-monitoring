@@ -119,7 +119,7 @@ It was important for us to choose a set of data that we can use in the future. S
 <details>
 <summary>ER diagram</summary>
 
-![](/docs/TripleA-ER.png)
+![](/docs/TripleA-ERD.png)
 
 </details>
 
@@ -240,6 +240,12 @@ It was important for us to choose a set of data that we can use in the future. S
 
 ## ER diagram's
 
+<details>
+<summary>ER diagram</summary>
+
+![](/docs/TripleA-ER.png)
+
+</details>
 ## DDL queries 
 
 ## DML queries
