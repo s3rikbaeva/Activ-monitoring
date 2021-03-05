@@ -99,13 +99,20 @@ It was important for us to choose a set of data that we can use in the future. S
 
 <a href="/docs/dataset/employee.csv">Employee</a>
 <br />
+<a href="/docs/dataset/employee_record.csv">Employee record</a>
+<br />
+<a href="/docs/dataset/employee_activity.csv">Employee activity</a>
+<br />
 <a href="/docs/dataset/job.csv">Job</a>
 <br />
 <a href="/docs/dataset/company.csv">Company</a>
 <br />
-<a href="/docs/dataset/employee_activity.csv">Employee activity</a>
+<a href="/docs/dataset/manager.csv">Manager</a>
 <br />
-<a href="/docs/dataset/employee_additional_info.csv">Employee additional info</a>
+<a href="/docs/dataset/project.csv">Project</a>
+<br />
+<a href="/docs/dataset/task.csv">Task</a>
+<br />
 
 <b>The size of each data set takes up almost 6000 data, which have completely different dimensions.</b>
 <h4>Initial ER diagram </h4>
