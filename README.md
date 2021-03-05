@@ -240,8 +240,8 @@ It was important for us to choose a set of data that we can use in the future. S
 # Data modeling and database design
 
 ## ER diagram
-  <h4>When designing our diagram, it was important for us to choose the <b>right attributes</b> for each table and build the <b>right relationships</b> between the tables.We also decided to implement diagrams in two types, `class` and `figure`. The solution was to highlight the following tables, which are given below:
-<details></h4>
+  When designing our diagram, it was important for us to choose the <b>right attributes</b> for each table and build the <b>right relationships</b> between the tables.We also decided to implement diagrams in two types, `class` and `figure`. The solution was to highlight the following tables, which are given below:
+<details>
 <summary>ER diagram(figure-shape)</summary>
 
 ![](/docs/TripleA-ER.png)
@@ -250,9 +250,17 @@ It was important for us to choose a set of data that we can use in the future. S
 
    The main performer is the Employee and the less important table for recording the Employee_record activity, which is linked by a 1-to-Many relationship, where the Employee can record multiple reports on a particular job. Also, in each Employee_record, there is a specific task that the Employee has done. The task is related to the work(from the part). Therefore, it was decided to build the logic for example,
    
-   The job can be divided into tasks (1-to-Many), and for each task there is a record (1-to-Many), which is performed by an Employee(1-to-Many).
-     
-   Also, there is a certain part with the Project Manager, because the PM can contact the Employee using the Project. And for each Employee's relationship with the PM, there is a specific project (1-to-Many), while for an employee there may be several projects, or vice versa, several Employees are allocated for the project(Many-to-Many). Ultimately, the ratio between a Company and an Employee remains Many-to-Many, since one employee can work in multiple Companies, just as a Company employs multiple employees.
+   "The job can be divided into tasks (1-to-Many), and for each task there is a record (1-to-Many), which is performed by an Employee(1-to-Many)"
+    Also, there is a certain part with the Project Manager, because the PM can contact the Employee using the Project. And for each Employee's relationship with the PM, there is a specific project (1-to-Many), while for an employee there may be several projects, or vice versa, several Employees are allocated for the project(Many-to-Many). Ultimately, the ratio between a Company and an Employee remains Many-to-Many, since one employee can work in multiple Companies, just as a Company employs multiple employees.
+    
+   For our ActivMonitoring application, the following structure was selected, which consists of the following data and types for each column:
+<details>
+<summary>ER diagram(class)</summary>
+
+![](/docs/TripleA-ERD.png)
+
+</details>
+
 
 ## DDL queries 
 
