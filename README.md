@@ -159,49 +159,44 @@ It was important for us to choose a set of data that we can use in the future. S
 </ul>
 
 <h3>Job table</h3> 
-<div style="text-align: center">
-   
-  <i>1) jobID - primary key - INT(11) - ID of job </i><br />
-  <i>2) jobLevel - INT(5) - Job level at company on a scale of 1 to 5 </i><br />
-  <i>3) jobRole - VARCHAR(11) - Name of job role in company </i><br />
-
-</div>
+<ul>     
+  <li><a>jobID - primary key - INT(11) - ID of job</a></li>
+  <li><a>jobLevel - INT(5) - Job level at company on a scale of 1 to 5 </a></li>
+  <li><a>jobRole - VARCHAR(11) - Name of job role in company</a></li>
+</ul>
 
 <h3>Task table</h3> 
-<div style="text-align: center">
-   
-  <i>1) taskID - primary key - INT(11) - ID of task </i><br />
-  <i>2) jobID - foreign key - INT(11) - ID of job </i><br />
-  <i>3) employeeRecordID - foreign key - INT(11) - ID of record </i><br />
-  <i>4) taskDescription - VARCHAR(50) - Description of the activity performed by the employee </i><br />
+<ul>     
+  <li><a>taskID - primary key - INT(11) - ID of task</a></li>
+  <li><a>jobID - foreign key - INT(11) - ID of job</a></li>
+  <li><a>employeeRecordID - foreign key - INT(11) - ID of record</a></li>
+  <li><a>taskDescription - VARCHAR(50) - Description of the activity performed by the employee</a></li>
+</ul>
 
-</div>
 
 <h3>Manager table</h3> 
-<div style="text-align: center">
-   
-  <i>1) managerID - primary key - INT(11) - ID of manager </i><br />
-  <i>2) name - VARCHAR(50) - Name of manager </i><br />
-
-</div>
+<ul>   
+  <li><a>managerID - primary key - INT(11) - ID of manager</a></li>
+  <li><a>name - VARCHAR(50) - Name of manager</a></li>
+</ul>
 
 <h3>Project table</h3> 
-<div style="text-align: center">
+<ul>   
    
-  <i>1) projectID - primary key - INT(11) - ID of manager </i><br />
-  <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
-  <i>3) managerID - foreign key - INT(11) - ID of manager </i><br />
-  <i>4) projectName - VARCHAR(50) - project name </i><br />
-</div>
+  <li><a>projectID - primary key - INT(11) - ID of manager</a></li>
+  <li><a>employeeID - foreign key - INT(11) - ID of employee</a></li>
+  <li><a>managerID - foreign key - INT(11) - ID of manager</a></li>
+  <li><a>projectName - VARCHAR(50) - project name</a></li>
+</ul>
 
 <h3>Company table</h3> 
-<div style="text-align: center">
+<ul>   
    
-  <i>1) companyID - primary key - INT(11) - ID of company </i><br />
-  <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
-  <i>3) name - VARCHAR(50) - Company name </i><br />
-  <i>4) employeeNumber - INT(5) - Employee number </i><br />
-</div>
+  <li><a>companyID - primary key - INT(11) - ID of company</a></li>
+  <li><a>employeeID - foreign key - INT(11) - ID of employee</a></li>
+  <li><a>name - VARCHAR(50) - Company name</a></li>
+  <li><a>employeeNumber - INT(5) - Employee number</a></li>
+<ul>   
 
 
 <!--UML diagram  -->
