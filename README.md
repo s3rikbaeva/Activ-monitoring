@@ -196,11 +196,12 @@ It was important for us to choose a set of data that we can use in the future. S
   <li><a>employeeID - foreign key - INT(11) - ID of employee</a></li>
   <li><a>name - VARCHAR(50) - Company name</a></li>
   <li><a>employeeNumber - INT(5) - Employee number</a></li>
-<ul>   
+</ul>   
 
 
 <!--UML diagram  -->
 ## UML diagram 
+
 1. The system outputs the data to the project manager, which will contain developers who do not have a certain amount of working time.
 2. The system outputs data to the project manager, which will show the amount of time the developer has worked on the project for a certain amount of time to monitor the number of hours of work.
 3. The system makes an estimate of the remaining time of the specified project and outputs the information to the project manager.
@@ -217,6 +218,7 @@ It was important for us to choose a set of data that we can use in the future. S
 14. The system gives out the number of the developer and the project, the level and role of the employee who works on this activity.
 15. The system provides information about the level of the employee in a certain period of time and the project.
 
+<br />
 <details>
 <summary>UML diagram</summary>
 
