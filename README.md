@@ -51,7 +51,7 @@
 Help developers discover the problem in time, evaluate it, give them the opportunity to suggest a solution, and avoid costly fixes without losing their way. As a result, the main goal is to develop the project in a <b>fixed time</b>, at a price and with a given <b>functionality</b> and <b>quality</b>.
 
 We offer the following solutions:
-* Correct calculation of time and effort for each project.
+* Correct calculation of time and effort for each project. :memo:
 * Monitoring the performance of each employee of your company :speech_balloon:
 * During the quarantine, many of the company's employees work from home, so our web app is up-to-date. :mask:
 
@@ -121,67 +121,85 @@ It was important for us to choose a set of data that we can use in the future. S
 <h3>Employee table</h3> 
 <div style="text-align: center">
    
-  <i>1) employeeID - primary key - ID of employee</i><br />
-  <i>2) fullName - Fullname of employee</i><br />
-  <i>3) gender - gender of employee</i><br />
-  <i>4) jobID - foreign key - for position in job of employee</i><br />
-  <i>5) companyID - foreign key - where employee works</i><br />
-  <i>6) distanceFromHome - Distance from home in kms</i><br />
-  <i>7) yearsAtCompany - Total number of years spent at the company by the employee</i><br />
-  <i>8) yearsSinceLastPromotion - Number of years since last promotion</i><br />
-  <i>9) yearsWithCurrManager -Number of years under current manager</i><br />
+  <i>1) employeeID - primary key - INT(11) - ID of employee</i><br />
+  <i>2) companyID - foreign key - INT(11) - ID of company, in which employee currently working</i><br />
+  <i>3) firstName - VARCHAR(50)- first name of employee</i><br />
+  <i>4) lasName - VARCHAR(50) - last name of employee</i><br />
+  <i>5) gender - CHAR(2) - gender of employee (M/F) </i><br />
+  <i>6) yearsAtCompany - INT(2)- Total number of years spent at the company by the employee</i><br />
   
-<h3>Employee_activity table</h3> 
+<h3>Employee_record table</h3> 
 <div style="text-align: center">
    
-  <i>1) employeeID - foreign key - ID of employee</i><br />
-  <i>2) jobID - foreign key - for position in job of employee</i><br />
-  <i>3) performanceRating - Performance rating for last year</i><br />
-  <i>4) spentTime - spent time for activity</i><br />
-  <i>5) standardHours - Standard hours of work for the employee</i><br />
-  <i>6) totalWorkingYears - Total number of years the employee has worked so far</i><br />
-  <i>7) inTime - entered time of employee</i><br />
-  <i>8) outTime - leaved time of employee</i><br />
-
-</div>
-
-<h3>Employee_activity table</h3> 
-<div style="text-align: center">
-   
-  <i>1) employeeID - foreign key - ID of employee</i><br />
-  <i>2) jobID - foreign key - for position in job of employee</i><br />
-  <i>3) performanceRating - Performance rating for last year</i><br />
-  <i>4) spentTime - spent time for activity</i><br />
-  <i>5) standardHours - Standard hours of work for the employee</i><br />
-  <i>6) totalWorkingYears - Total number of years the employee has worked so far</i><br />
-  <i>7) inTime - entered time of employee</i><br />
-  <i>8) outTime - leaved time of employee</i><br />
+  <i>1) employeeRecordID - primary key - INT(11) - ID of record</i><br />
+  <i>2) employeeID - foreign key - INT(11) - ID of employee</i><br />
+  <i>3) performanceRating - INT(5) - Performance rating for last year</i><br />
+  <i>4) spentTime - TIME - spent time for activity</i><br />
+  <i>5) standardHours - INT(5) - Standard hours of work for the employee</i><br />
+  <i>6) totalWorkingYears - INT(5) - Total number of years the employee has worked so far</i><br />
+  <i>7) inTime - DATETIME - entered time of employee</i><br />
+  <i>8) outTime - DATETIME - leaved time of employee</i><br />
 
 </div>
 
 <h3>Employee_additional_info table</h3> 
 <div style="text-align: center">
    
-  <i>1) employeeID - foreign key - ID of employee</i><br />
-  <i>2) education - Education Level</i><br />
-  <i>3) maritalStatus - Marital status of the employee</i><br />
-  <i>4) monthlyIncome - Monthly income in rupees per month</i><br />
-  <i>5) numCompaniesWorked - Total number of companies the employee has worked for</i><br />
-  <i>6) environmentSatisfaction - Work Environment Satisfaction Level</i><br />
-  <i>7) trainingTimesLastYear - Number of Times training was conducted for this employee last year</i><br />
+  <i>1) employeeAdditionalInfoID - foreign key - INT(11) -  ID of employee</i><br />
+  <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
+  <i>3) education - INT(2)- Education Level (1-'Below College'; 2-'College'; 3-'Bachelor';4-'Master'; 5-'Doctor');
+  <i>4) maritalStatus - VARCHAR(5) - Marital status of the employee</i><br />
+  <i>5) monthlyIncome - INT(10) - Monthly income in rupees per month</i><br />
+  <i>6) environmentSatisfaction - INT(5) - Work Environment Satisfaction Level</i><br />
+  <i>7) trainingTimesLastYear - INT(5) - Number of Times training was conducted for this employee last year</i><br />
 
 </div>
 
 <h3>Job table</h3> 
 <div style="text-align: center">
    
-  <i>1) jobID - primary key - ID of job</i><br />
-  <i>2) jobInvolvement - Job Involvement Level</i><br />
-  <i>3) jobLevel - Job level at company on a scale of 1 to 5</i><br />
-  <i>4) jobRole - Name of job role in company</i><br />
-  <i>5) jobSatisfaction - Job Satisfaction Level</i><br />
+  <i>1) jobID - primary key - INT(11) - ID of job</i><br />
+  <i>2) jobLevel - INT(5) - Job level at company on a scale of 1 to 5</i><br />
+  <i>3) jobRole - VARCHAR(11) - Name of job role in company</i><br />
 
 </div>
+
+<h3>Task table</h3> 
+<div style="text-align: center">
+   
+  <i>1) taskID - primary key - INT(11) - ID of task</i><br />
+  <i>2) jobID - foreign key - INT(11) - ID of job</i><br />
+  <i>3) employeeRecordID - foreign key - INT(11) - ID of record</i><br />
+  <i>4) taskDescription - VARCHAR(50) - Description of the activity performed by the employee</i><br />
+
+</div>
+
+<h3>Manager table</h3> 
+<div style="text-align: center">
+   
+  <i>1) managerID - primary key - INT(11) - ID of manager</i><br />
+  <i>2) name - VARCHAR(50) - Name of manager</i><br />
+
+</div>
+
+<h3>Project table</h3> 
+<div style="text-align: center">
+   
+  <i>1) projectID - primary key - INT(11) - ID of manager</i><br />
+  <i>2) employeeID - foreign key - INT(11) - ID of employee</i><br />
+  <i>3) managerID - foreign key - INT(11) - ID of manager</i><br />
+  <i>4) projectName - VARCHAR(50) - project name</i><br />
+</div>
+
+<h3>Company table</h3> 
+<div style="text-align: center">
+   
+  <i>1) companyID - primary key - INT(11) - ID of company</i><br />
+  <i>2) employeeID - foreign key - INT(11) - ID of employee</i><br />
+  <i>3) name - VARCHAR(50) - Company name</i><br />
+  <i>4) employeeNumber - INT(5) - Employee number</i><br />
+</div>
+
 
 <!--UML diagram  -->
 ## UML diagram 
