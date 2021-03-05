@@ -154,7 +154,7 @@ It was important for us to choose a set of data that we can use in the future. S
    
   <i>1) employeeAdditionalInfoID - foreign key - INT(11) -  ID of employee</i><br />
   <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
-  <i>3) education - INT(2)- Education Level (1-'Below College'; 2-'College'; 3-'Bachelor';4-'Master'; 5-'Doctor');
+  <i>3) education - INT(2)- Education Level (1-'Below College'; 2-'College'; 3-'Bachelor';4-'Master'; 5-'Doctor');<i><br />
   <i>4) maritalStatus - VARCHAR(5) - Marital status of the employee</i><br />
   <i>5) monthlyIncome - INT(10) - Monthly income in rupees per month</i><br />
   <i>6) environmentSatisfaction - INT(5) - Work Environment Satisfaction Level</i><br />
@@ -247,7 +247,6 @@ It was important for us to choose a set of data that we can use in the future. S
 
 </details>
 
-<br />
    The main performer is the Employee and the less important table for recording the Employee_record activity, which is linked by a 1-to-Many relationship, where the Employee can record multiple reports on a particular job. Also, in each Employee_record, there is a specific task that the Employee has done. The task is related to the work(from the part). Therefore, it was decided to build the logic for example,
      ```sh
   The job can be divided into tasks (1-to-Many), and for each task there is a record (1-to-Many), which is performed by an Employee(1-to-Many).
