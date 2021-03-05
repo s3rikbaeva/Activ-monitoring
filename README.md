@@ -126,42 +126,37 @@ It was important for us to choose a set of data that we can use in the future. S
 <h3>Structure of tables</h3>
 
 <h3>Employee table</h3> 
-<div style="text-align: center">
-   
-  <i>1) employeeID - primary key - INT(11) - ID of employee</i><br />
-  <i>2) companyID - foreign key - INT(11) - ID of company, in which employee currently working</i><br />
-  <i>3) firstName - VARCHAR(50)- first name of employee</i><br />
-  <i>4) lasName - VARCHAR(50) - last name of employee</i><br />
-  <i>5) gender - CHAR(2) - gender of employee (M/F) </i><br />
-  <i>6) yearsAtCompany - INT(2)- Total number of years spent at the company by the employee</i><br />
-
-</div>
+<ul>
+        <li><a>employeeID - primary key - INT(11) - ID of employee</a></li>
+        <li><a>companyID - foreign key - INT(11) - ID of company, in which employee currently working</a></li>
+        <li><a>firstName - VARCHAR(50)- first name of employee</a></li>
+        <li><a>lasName - VARCHAR(50) - last name of employee</a></li>
+        <li><a>gender - CHAR(2) - gender of employee (M/F) </a></li>
+        <li><a>yearsAtCompany - INT(2)- Total number of years spent at the company by the employee</a></li>
+</ul>
+ 
 <h3>Employee_record table</h3> 
-<div style="text-align: center">
-   
-  <i>1) employeeRecordID - primary key - INT(11) - ID of record</i><br />
-  <i>2) employeeID - foreign key - INT(11) - ID of employee</i><br />
-  <i>3) performanceRating - INT(5) - Performance rating for last year</i><br />
-  <i>4) spentTime - TIME - spent time for activity</i><br />
-  <i>5) standardHours - INT(5) - Standard hours of work for the employee</i><br />
-  <i>6) totalWorkingYears - INT(5) - Total number of years the employee has worked so far</i><br />
-  <i>7) inTime - DATETIME - entered time of employee</i><br />
-  <i>8) outTime - DATETIME - leaved time of employee</i><br />
-
-</div>
+<ul>   
+  <li><a>employeeRecordID - primary key - INT(11) - ID of record</a></li>
+  <li><a>employeeID - foreign key - INT(11) - ID of employee</a></li>
+  <li><a>performanceRating - INT(5) - Performance rating for last year</a></li>
+  <li><a>spentTime - TIME - spent time for activity</a></li>
+  <li><a>standardHours - INT(5) - Standard hours of work for the employee</a></li>
+  <li><a>totalWorkingYears - INT(5) - Total number of years the employee has worked so far</a></li>
+  <li><a>inTime - DATETIME - entered time of employee</a></li>
+  <li><a>outTime - DATETIME - leaved time of employee</a></li>
+</ul>
 
 <h3>Employee_additional_info table</h3> 
-<div style="text-align: center">
-   
-  <i>1) employeeAdditionalInfoID - foreign key - INT(11) -  ID of employee</i><br />
-  <i>2) employeeID - foreign key - INT(11) - ID of employee </i><br />
-  <i>3) education - INT(2)- Education Level (1-'Below College'; 2-'College'; 3-'Bachelor'; 4-'Master'; 5-'Doctor') <i><br />
-  <i>4) maritalStatus - VARCHAR(5) - Marital status of the employee </i><br />
-  <i>5) monthlyIncome - INT(10) - Monthly income in rupees per month </i><br />
-  <i>6) environmentSatisfaction - INT(5) - Work Environment Satisfaction Level </i><br />
-  <i>7) trainingTimesLastYear - INT(5) - Number of Times training was conducted for this employee last year </i><br />
-
-</div>
+<ul>     
+  <li><a>employeeAdditionalInfoID - foreign key - INT(11) -  ID of employee</a></li>
+  <li><a>employeeID - foreign key - INT(11) - ID of employee</a></li>
+  <li><a>education - INT(2)- Education Level (1-'Below College'; 2-'College'; 3-'Bachelor'; 4-'Master'; 5-'Doctor')</a></li>
+  <li><a>maritalStatus - VARCHAR(5) - Marital status of the employee</a></li>
+  <li><a>monthlyIncome - INT(10) - Monthly income in rupees per month</a></li>
+  <li><a>environmentSatisfaction - INT(5) - Work Environment Satisfaction Level</a></li>
+  <li><a>trainingTimesLastYear - INT(5) - Number of Times training was conducted for this employee last year</a></li>
+</ul>
 
 <h3>Job table</h3> 
 <div style="text-align: center">
