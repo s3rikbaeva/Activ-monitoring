@@ -33,6 +33,14 @@
         <li><a href="#uml-diagram">UML diagram </a></li>
       </ul>
     </li>
+    <li>
+      <a href="#data-modeling-and-database-design">Data modeling and database design</a>
+      <ul>
+        <li><a href="#er-diagram">ER diagram's</a></li>
+        <li><a href="#ddl-queries">DDL queries</a></li>
+        <li><a href="#dml-queries">DML queries</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
@@ -201,3 +209,14 @@ It was important for us to choose a set of data that we can use in the future. S
 </details>
 
 <br />
+
+<!-- Data modeling and database design -->
+# Data modeling and database design
+
+## ER diagram's
+
+## DDL queries 
+
+## DML queries
+
+
