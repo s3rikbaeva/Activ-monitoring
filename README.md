@@ -99,7 +99,7 @@ It was important for us to choose a set of data that we can use in the future. S
 <br />
 <a href="/docs/dataset/employee_record.csv">Employee record</a>
 <br />
-<a href="/docs/dataset/employee_activity.csv">Employee activity</a>
+<a href="/docs/dataset/employee_additional_info.csv">Employee additional info</a>
 <br />
 <a href="/docs/dataset/job.csv">Job</a>
 <br />
