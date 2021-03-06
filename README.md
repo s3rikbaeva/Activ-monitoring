@@ -1,9 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://sun9-55.userapi.com/impg/JfiXoEZ3BMNL3kFwkQGTwGGyYDQhB26mnIOHyA/QCZGdd6tPHg.jpg?size=425x216&quality=96&proxy=1&sign=29e13599e98c5890fd0e3c2a424581bc&type=album" alt="Logo" width="170" height="100">
-  </a>
 
   <h3 align="center">Activ-Monitoring app</h3>
 
@@ -256,6 +254,12 @@ It was important for us to choose a set of data that we can use in the future. S
 
 
 ## DDL queries 
+
+We created the user and the database using the phpMyAdmin GUI, as we found it convenient. All privileges were transferred to the main user `root`, which we will use in the future. After configuring PHP and MySQL, it was decided to integrate everything into VSCode for convenience. Therefore, it was not difficult to establish a connection between them. To make it much easier to write queries in the future. For verification, we used the local address and the queries that we sent when creating the tables were successfully displayed.
+
+<img src="https://sun9-52.userapi.com/impg/vLXZvFfx9R144iIiWK6zjI6x1S-Z5gDOsUJgzg/UWlnAmUHYZ8.jpg?size=1280x602&quality=96&sign=11cb92453fb6b0d505c45e86cc30fdd7&type=album">
+
+You can view all the queries that we made in the following file  <a href="/docs/TripleA-DDL-queries.sql">DDL queries</a>
 
 ## DML queries
 
