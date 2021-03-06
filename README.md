@@ -259,7 +259,7 @@ We created the user and the database using the phpMyAdmin GUI, as we found it co
 
 <img src="https://sun9-52.userapi.com/impg/vLXZvFfx9R144iIiWK6zjI6x1S-Z5gDOsUJgzg/UWlnAmUHYZ8.jpg?size=1280x602&quality=96&sign=11cb92453fb6b0d505c45e86cc30fdd7&type=album">
 
-You can view all the queries that we made in the following file  <a href="/docs/TripleA-DDL-queries.sql.csv">DDL queries</a>
+You can view all the queries that we made in the following file  <a href="/docs/TripleA-DDL-queries.sql">DDL queries</a>
 
 ## DML queries
 
