@@ -71,5 +71,3 @@ ALTER TABLE task ADD CONSTRAINT fk_task_job_id FOREIGN KEY (jobID) REFERENCES jo
 ALTER TABLE project ADD CONSTRAINT fk_project_employee_id FOREIGN KEY (employeeID) REFERENCES employee(employeeID);
 
 ALTER TABLE project ADD CONSTRAINT fk_project_manager_id FOREIGN KEY (managerID) REFERENCES manager(managerID);
-
-ALTER TABLE company ADD CONSTRAINT fk_company_employee_id FOREIGN KEY (employeeID) REFERENCES employee(employeeID);
