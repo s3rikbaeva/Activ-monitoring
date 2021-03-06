@@ -59,3 +59,17 @@ CREATE TABLE employee_record (
     inTime DATETIME,
     outTime DATETIME
 );
+
+ALTER TABLE employee ADD CONSTRAINT fk_employee_company_id FOREIGN KEY (companyID) REFERENCES company(companyID);
+
+ALTER TABLE employee_record  ADD CONSTRAINT fk_employeeRecord_employee_id FOREIGN KEY (employeeID) REFERENCES employee(employeeID);
+
+ALTER TABLE employee_additional_info ADD CONSTRAINT fk_employeeAdditionalInfo_employee_id FOREIGN KEY (employeeID) REFERENCES employee(employeeID);
+
+ALTER TABLE task ADD CONSTRAINT fk_task_job_id FOREIGN KEY (jobID) REFERENCES job(jobID);
+
+ALTER TABLE project ADD CONSTRAINT fk_project_employee_id FOREIGN KEY (employeeID) REFERENCES employee(employeeID);
+
+ALTER TABLE project ADD CONSTRAINT fk_project_manager_id FOREIGN KEY (managerID) REFERENCES manager(managerID);
+
+ALTER TABLE company ADD CONSTRAINT fk_company_employee_id FOREIGN KEY (employeeID) REFERENCES employee(employeeID);
