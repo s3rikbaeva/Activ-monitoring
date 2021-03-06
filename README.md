@@ -263,4 +263,18 @@ You can view all the queries that we made in the following file  <a href="/docs/
 
 ## DML queries
 
+To add 5.5k data, it would be inconvenient to use the `INSERT` function, as it would take a very long time to write and add. Also, we did not consider it necessary to add a GUI via phpMyAdmin, since the process will take some time, and it would not be logical to generate 5.5k lines to each table. To add data to the tables that we created, we decided to use a ready-made script:
+
+```sh
+  LOAD DATA INFILE 'employee.csv' 
+  INTO TABLE employee 
+  FIELDS TERMINATED BY ',' 
+  ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+  IGNORE 1 ROWS;
+  ```
+  
+In order for the addition of data to be successful without any errors on the keys that we added to the tables(This can be `Foreign keys` , since we indicated above that they can not have empty values). Be sure to run each script in the following order, which we specified in the file, otherwise an error will occur.
+
+<img src="https://sun9-41.userapi.com/impg/QR2MjCZlKesGMhtDqRvkC2bYbsG4V3p6Oo_fNw/C9kBmjdrXOk.jpg?size=1280x684&quality=96&sign=08a219f566ac01deced405cf844ef397&type=album">
 
