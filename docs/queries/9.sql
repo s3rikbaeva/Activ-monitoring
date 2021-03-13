@@ -1,8 +1,6 @@
---What is the specific project number, the developer and manager who worked on the specified project, and the amount of time spent on it during the specified time period?
+--What is the specific project number, the developer and manager who worked on the specified project?
 
-SELECT projectID, employeeID, managerID, spentTime
-FROM employee_record
-JOIN project p
-JOIN employee e
-JOIN manager m
-WHERE
+SELECT p.projectID, e.employeeID, m.managerID, er.spentTime
+FROM employee_record er, project p, employee e, manager m
+WHERE er.employeeID = e.employeeID AND p.employeeID = e.employeeID 
+AND m.managerID = p.managerID;
