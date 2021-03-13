@@ -39,6 +39,9 @@
         <li><a href="#dml-queries">DML queries</a></li>
       </ul>
     </li>
+      <li>
+          <a href="#sql-queries">SQL Queries</a>
+      </li>
   </ol>
 </details>
 
@@ -278,3 +281,43 @@ In order for the addition of data to be successful without any errors on the key
 
 <img src="https://sun9-41.userapi.com/impg/QR2MjCZlKesGMhtDqRvkC2bYbsG4V3p6Oo_fNw/C9kBmjdrXOk.jpg?size=1280x684&quality=96&sign=08a219f566ac01deced405cf844ef397&type=album">
 
+
+<!-- SQL queries -->
+# SQL queries
+There are some points in our queries, like writing elements through the backend. For example, in this query, the projectID may depend on the situation that we will specify in the backend part of the development.
+
+```sh
+  SELECT COUNT(e.employeeID) FROM employee e, employee_record er, project p 
+  WHERE e.employeeID = er.employeeID AND  p.employeeID = e.employeeID AND er.spentTime = 0 AND p.projectID = 100;
+  ```
+  
+ Using variables in php:
+ ```sh
+  <?php
+  $mysqli = new mysqli("localhost", "user", "pass", "test");
+
+  if( mysqli_connect_errno() )
+    die("Connection failed: %s\n", mysqli_connect_error());
+
+  $col = "100";
+
+  $query = "SELECT COUNT(e.employeeID) FROM employee e, employee_record er, project p 
+            WHERE e.employeeID = er.employeeID AND  p.employeeID = e.employeeID AND er.spentTime = 0 AND p.projectID = $col; ";
+
+  $result = $mysqli->query($query);
+
+  while($row = $result->fetch_assoc())
+  {
+    echo "<p>" . $row["$col"] . "</p>\n";
+  }
+
+  $result->close();
+
+  $mysqli->close();
+?>
+
+
+  ```
+ 
+
+All requests are on this <a href="/docs/dataset/queries">path</a> path.
