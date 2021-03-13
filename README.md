@@ -84,7 +84,7 @@ We chose PHP for the backend, as we had previously worked with this programming 
 6) How many developers are involved in a particular project, also specify the project name?
 7) Which developers have been working for a particular company for more than 5 years?
 8) What is the time of the last login of a particular developer along with its full name job id?
-9) What is the specific project number, the developer and manager who worked on the specified project, and the amount of time spent on it during the specified time period?
+9) What is the specific project ID, the developer and manager who worked on the specified project?
 10) Specify the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently.
 11) What is the education and training time in the past year of a developer and a manager who work on the same project?
 12) What additional information is there for a particular developer, if you enter it in the search?
