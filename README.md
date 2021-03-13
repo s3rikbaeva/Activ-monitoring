@@ -76,18 +76,18 @@ We chose PHP for the backend, as we had previously worked with this programming 
 1) How many specific developers are currently out of work for a <i>given project</i> in a <i>given period</i>?
 2) How long a certain developer worked on a <i>certain project</i> over a <i>certain period</i> of time?
 3) How many remaining hours of a particular project are subtracting the hours spent from the total expected?
-4) How many reports are made by a certain developer and their description in a certain period of time for the specified project?
+4) What reports (and activity descriptions) were made by a particular developer at a particular time?
 5) Which is the list of developers currently in development for the project specified by the project manager?
-6) What is the time data of the projects that were changed in a certain period of time, and their description?
-7) What types, description, and number of projects a particular developer is working on during a specified time period?
-8) What is the time of the last login of a particular developer along with its full name job number?
+6) How many developers are involved in a particular project, also specify the project name?
+7) Which developers have been working for a particular company for more than 5 years?
+8) What is the time of the last login of a particular developer along with its full name job id?
 9) What is the specific project number, the developer and manager who worked on the specified project, and the amount of time spent on it during the specified time period?
-10) What is the number and number of employees who work more or less than a certain time in the company?
+10) Specify the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently.
 11) What is the education and training time in the past year of a developer and a manager who work on the same project?
-12) What is the marital status of all developers under development of the project?
+12) What additional information is there for a particular developer, if you enter it in the search?
 13) What is the number of the manager and the project that he worked on in a certain period of time?
-14) What is the number of the developer, his level and role of work in the specified project with the number of this activity?
-15) Which employees had the same level of work in a particular project in a particular time period?
+14) How many developers who are very successful work for a particular company?
+15) Which employees have a low level of work in a particular project in a certain period of time?
 <br />
 
 
