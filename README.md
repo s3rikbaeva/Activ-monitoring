@@ -320,4 +320,4 @@ There are some points in our queries, like writing elements through the backend.
   ```
  
 
-All requests are on this <a href="/docs/dataset/queries">path</a>.
+All requests are on this <a href="/docs/queries">path</a>.
