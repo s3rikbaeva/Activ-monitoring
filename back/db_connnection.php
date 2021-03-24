@@ -1,18 +1,7 @@
 <?php
-function OpenCon()
-{
-    $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "pass123";
-    $db = "activ_monitoring";
-    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+    $connect = mysqli_connect('localhost', 'root', 'root', 'test');
     
-    return $conn;
-}
- 
-function CloseCon($conn)
-{
-    $conn -> close();
-}
-   
+    if(!$connect){
+        die('Error connect to DataBase');
+    }
 ?>
