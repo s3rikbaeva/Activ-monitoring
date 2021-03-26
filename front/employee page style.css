@@ -156,8 +156,8 @@ main{
   
   .profile-userpic img {
     float: none;
-    margin-left: 6rem;
-    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-top: 5rem;
     width: 15%;
     height: 15%;
     -webkit-border-radius: 50% !important;
@@ -167,7 +167,7 @@ main{
   
   .profile-usertitle {
     text-align: center;
-    margin-top: 20px;
+    margin-top: -3rem;
   }
   
   .profile-usertitle-name {
@@ -175,7 +175,7 @@ main{
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 7px;
-    margin-right: 71rem;
+    margin-right: 52.5rem;
   }
   
   .profile-usertitle-job {
@@ -184,7 +184,7 @@ main{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
-    margin-right: 72rem;
+    margin-right: 53.3rem;
   }
 
   .button {
@@ -197,8 +197,10 @@ main{
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
-    margin-right: 72.3rem;
+    margin-left: 0rem;
     border-radius: 10px;
+    margin-left: 44.7rem;
+    margin-top: 4rem;
   }
   
   .button1 {
@@ -275,7 +277,12 @@ main{
     min-height: 460px;
   }
 
- ul{
-   margin-left: 35rem;
-   justify-content: space-between;
+  /*-----------------------------------------------------------------------------------------------------------*/
+ul{
+  margin-left: 45rem;
+  margin-top: -15rem;
+}
+
+ ul li{
+   margin-top: 1.7rem;
  }
