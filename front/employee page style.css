@@ -278,11 +278,12 @@ main{
   }
 
   /*-----------------------------------------------------------------------------------------------------------*/
-ul{
+
+.profile-userpic ul{
   margin-left: 45rem;
   margin-top: -15rem;
 }
 
- ul li{
+.profile-userpic ul li{
    margin-top: 1.7rem;
  }
