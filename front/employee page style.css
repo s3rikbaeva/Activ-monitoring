@@ -274,3 +274,8 @@ main{
     background: #fff;
     min-height: 460px;
   }
+
+ ul{
+   margin-left: 35rem;
+   justify-content: space-between;
+ }
