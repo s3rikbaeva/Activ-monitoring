@@ -247,18 +247,19 @@ tbody tr:nth-child(even){
 }
 
 .badge.success{
-    background: #def7ec;
+    background: #7fd69d;
     color: var(--main-color);
 }
 
 .badge.warning{
-    background: #f0f6b2;
-    color: orange;
+    background: #e4ae75;
+    color: var(--main-color);
 }
 
 .td-team{
     display: flex;
     align-items: center;
+    margin-left: 2rem;
 }
 
 .img-1,
