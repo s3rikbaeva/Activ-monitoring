@@ -436,85 +436,50 @@ tbody tr:nth-child(even){
     }
 }
 
-.buttons {
-    width: 400px;
-    margin: 50px auto;
-    padding: 10px 20px;
-    text-align: center;
-    background: white;
-    box-shadow: 0 0 3px #cccccc;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    width:200px;
+    position: relative;
+
 }
 
-button {
-    position: relative;
-    width: 300px;
-    height: 60px;
-    margin: 20px auto;
-    padding: 0;
-    font-size: 22px;
-    text-align: center;
-    color: white;
+.click{
+    background-color: white;
+}
+
+.click:hover {
+    background-color: #8390a2;
+}
+
+.click,.links {
+    padding: 12px;
+    font-size: 1.2em;
+    font-family: poppins;
     border: none;
     outline: none;
-    cursor: pointer;
-    overflow: hidden;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    transition: transform 0.4s ease-in-out;
+    width:200px;
+    color: var(--main-color);
+    transition: 0.3s;
 }
 
-.reload {
-
-	transition: all 300ms;
-	transform: scale(0.5);
-	opacity: 0;
-	box-shadow: 0px 2px 1px rgba( 0, 0, 0, 0.1 );
-	margin-left: -25px;
-  margin-top: -25px;
-	border-radius: 100%;
-	background: #fff;
-	position: fixed;
-	cursor: pointer;
-	height: 50px;
-	width: 50px;
-	top: 50%;
-	left: 50%;
-}
-
-.dropdown{
-    width: 38rem;
-    position: relative;
-}
-
-.dropdown:hover .dropdown-list{
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdown-select{
-    padding: .7rem;
-    border-radius: 7px;
-    background-color: white;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.dropdown-list{
-    border-radius: 4px;
-    background-color: white;
+.list {
     position: absolute;
-    top: 110%;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s linear, 0.2s linear;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
 }
 
-.dropdown-list__item{
-    padding: 1rem;
-    font-size: .9rem;
+.newlist {
+    transform: scaleY(1);
+}
+
+.links {
+    background-color: #283c63;
+}
+
+.links:hover {
+    background-color: #01579B;
+    transform: scale(1.1);
 }

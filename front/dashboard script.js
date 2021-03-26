@@ -36,3 +36,13 @@ function reloadClick() {
 setTimeout(function() {
   reloadButton.classList.add('active');
 }, 1);
+
+let click = document.querySelector('.click');
+
+            let list = document.querySelector('.list');
+
+            click.addEventListener("click",()=>{
+
+                list.classList.toggle('newlist');
+
+            });
