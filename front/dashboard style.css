@@ -479,3 +479,42 @@ button {
 	top: 50%;
 	left: 50%;
 }
+
+.dropdown{
+    width: 38rem;
+    position: relative;
+}
+
+.dropdown:hover .dropdown-list{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-select{
+    padding: .7rem;
+    border-radius: 7px;
+    background-color: white;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.dropdown-list{
+    border-radius: 4px;
+    background-color: white;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, 0.2s linear;
+}
+
+.dropdown-list__item{
+    padding: 1rem;
+    font-size: .9rem;
+}
