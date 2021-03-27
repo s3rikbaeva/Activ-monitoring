@@ -442,7 +442,8 @@ tbody tr:nth-child(even) {
 
 
 .change-lang{
-    margin-left: 45rem;
+    margin-left: 41rem;
+    font-size: 30px;
 }
 
 .language{
@@ -475,4 +476,11 @@ tbody tr:nth-child(even) {
     background: linear-gradient(to right, #2b232e36, white);
     border-radius: 30px;
     transition: .5s;
+}
+
+/*------------------------------------------------------------------password*/
+
+input:invalid {
+    border-color: #bf404057;
+    background: #f2d9d9;
 }
