@@ -444,6 +444,7 @@ tbody tr:nth-child(even) {
 .change-lang{
     margin-left: 41rem;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .language{
@@ -481,6 +482,15 @@ tbody tr:nth-child(even) {
 /*------------------------------------------------------------------password*/
 
 input:invalid {
-    border-color: #bf404057;
+    border-color: #bf404015;
     background: #f2d9d9;
+}
+
+.container-fluid{
+    margin-left: 41rem;
+    margin-top: 10rem;
+}
+
+.row{
+    margin-top: 2rem;
 }
