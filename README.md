@@ -42,6 +42,16 @@
       <li>
           <a href="#sql-queries">SQL Queries</a>
       </li>
+      <li>
+          <a href="#sql-queries">User-interface implementation and connection</a>
+          <ul>
+            <li><a href="#questions">Programming languages, design and frontend creation</a></li>
+            <li><a href="#dataset">Connecting to the database</a></li>
+            <li><a href="#uml-diagram">A few words about the backend</a></li>
+            <li><a href="#uml-diagram">SQL queries in action</a></li>
+            <li><a href="#uml-diagram">Data visualization</a></li>
+          </ul>
+      </li>
   </ol>
 </details>
 
@@ -321,3 +331,20 @@ There are some points in our queries, like writing elements through the backend.
  
 
 All requests are on this <a href="/docs/queries">path</a>.
+
+<!-- User-interface implementation and connection -->
+# User-interface implementation and connection
+
+## Programming languages, design and frontend creation
+
+
+## Connecting to the database
+
+
+## A few words about the backend
+
+
+## SQL queries in action
+
+
+## Data visualization
