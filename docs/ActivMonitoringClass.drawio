@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" modified="2021-03-13T12:13:23.701Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.54.1 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36" etag="aAU1VZ5I7MJyExD3Bahi" version="14.2.4" type="embed">
+<mxfile>
     <diagram id="RpbBUoyI8Ku9qZlPJRSa" name="TripleA">
-        <mxGraphModel dx="957" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="372" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -320,9 +320,6 @@
                         <mxPoint x="1419" y="637.75" as="sourcePoint"/>
                         <mxPoint x="1650" y="587.75" as="targetPoint"/>
                     </mxGeometry>
-                </mxCell>
-                <mxCell id="363" value="&lt;font color=&quot;#235a81&quot; face=&quot;monospace&quot;&gt;&lt;span style=&quot;font-size: 10.66px&quot;&gt;&lt;u&gt;SELECT COUNT(e.employeeID) FROM employee e, employee_record er, project p WHERE e.employeeID = er.employeeID AND&amp;nbsp; p.employeeID = e.employeeID AND er.spentTime = 0 AND p.projectID := input_data&lt;/u&gt;&lt;/span&gt;&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="460" y="140" width="290" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
