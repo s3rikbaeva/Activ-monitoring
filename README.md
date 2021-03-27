@@ -43,13 +43,13 @@
           <a href="#sql-queries">SQL Queries</a>
       </li>
       <li>
-          <a href="#sql-queries">User-interface implementation and connection</a>
+          <a href="#user-interface-implementation-and-connection">User-interface implementation and connection</a>
           <ul>
-            <li><a href="#questions">Programming languages, design and frontend creation</a></li>
-            <li><a href="#dataset">Connecting to the database</a></li>
-            <li><a href="#uml-diagram">A few words about the backend</a></li>
-            <li><a href="#uml-diagram">SQL queries in action</a></li>
-            <li><a href="#uml-diagram">Data visualization</a></li>
+            <li><a href="#programming-languages,-design-and-frontend-creation">Programming languages, design and frontend creation</a></li>
+            <li><a href="#connecting-to-the-database">Connecting to the database</a></li>
+            <li><a href="#a-few-words-about-the-backend">A few words about the backend</a></li>
+            <li><a href="#sql-queries-in-action">SQL queries in action</a></li>
+            <li><a href="#data-visualization">Data visualization</a></li>
           </ul>
       </li>
   </ol>
