@@ -7,7 +7,7 @@
       name="viewport"
       content="wisth=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>Employees</title>
+    <title>Settings</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
@@ -85,8 +85,23 @@
         </div>
       </header>
 
-      <main>
-        
+      <main><!------------------------------------------------------------->
+
+        <div class="language">
+        <div class="change-lang">Change language: </div>
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">
+              Russion
+            </button>
+            <button type="button" class="toggle-btn" onclick="register()">
+              English
+            </button>
+          </div>
+          <form id="login" class="input-group"></form>
+          <form id="register" class="input-group"></form>
+        </div>
+
       </main>
     </div>
     <script type="text/javascript" src="settings_script.js"></script>
