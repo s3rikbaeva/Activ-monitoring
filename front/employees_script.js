@@ -1,48 +1,10 @@
+var modalBtn = document.querySelector('.modal-btn');
+var modalBg = document.querySelector('.modal-bg');
+var modalClose = document.querySelector('.modal-close');
+modalBtn.addEventListener('click', function(){
+    modalBg.classList.add('bg-active');
+});
 
-// Vars
-var reloadButton  = document.querySelector( '.reload' );
-var reloadSvg     = document.querySelector( 'svg' );
-var reloadEnabled = true;
-var rotation      = 0;
-var palettes      = [
-  "#B3CC57",
-  "#ECF081",
-  "#FFBE40",
-  "#EF746F",
-  "#AB3E5B"
-]
-var currentPalette = 0;
-
-// Events
-reloadButton.addEventListener('click', function() { reloadClick() });
-
-// Functions
-function reloadClick() {
-
-  reloadEnabled = false;
-  rotation -= 180;
-  
-  // Eh, this works.
-  reloadSvg.style.webkitTransform = 'translateZ(0px) rotateZ( ' + rotation + 'deg )';
-  reloadSvg.style.MozTransform  = 'translateZ(0px) rotateZ( ' + rotation + 'deg )';
-  reloadSvg.style.transform  = 'translateZ(0px) rotateZ( ' + rotation + 'deg )';
-  
-  currentPalette = currentPalette + 1;
-  currentPalette = currentPalette % palettes.length;
-  document.body.style.background = palettes[currentPalette];
-}
-
-// Show button.
-setTimeout(function() {
-  reloadButton.classList.add('active');
-}, 1);
-
-let click = document.querySelector('.click');
-
-            let list = document.querySelector('.list');
-
-            click.addEventListener("click",()=>{
-
-                list.classList.toggle('newlist');
-
-            });
+modalClose.addEventListener('click', function(){
+    modalBg.classList.remove.remove('bg-active');
+});
