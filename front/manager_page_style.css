@@ -342,4 +342,90 @@ main{
 
  /*------------------------------------------------------------------------*/
 
- 
+.content {
+  margin: 35px;
+}
+
+.info-card {
+  width: 500px;
+  background-color: white;
+  border: 3px grey solid;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.info-card .info{
+    height: 100%;
+    width: 100%;
+}
+
+.info-card .info h3 {
+    display: block;
+    margin:0;
+    margin-bottom: 5px;
+}
+
+.info-card .info .info-item .summary {
+    position: relative;
+    height: 35px;
+}
+
+.info-card .info .info-item .summary .title {
+    font-size: 10pt;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .info-card .info .info-item .summary .value {
+    font-size: 8pt;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .info-card .info .info-item .slider {
+    height: 5px;
+    background-color: grey;
+    margin-top: 8px;
+    position: relative;
+  }
+
+  .info-card .info .info-item .slider .progress {
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: inline-block;
+    background-color: red;
+    animation: slide 1.5s ease-in-out;
+    transform-origin: left top;
+  }
+
+  .progress #ds {
+    width: 67%;
+  }
+
+  .progress #dbs {
+    width: 50%;
+  }
+
+  .progress #ins {
+    width: 86%;
+  }
+
+  .progress #mail {
+    width: 85%;
+  }
+
+  @keyframes slide {
+    from {
+      transform: scale(0,1);
+    }
+    
+    to {
+      transform: scale(1,1);
+    }
+  }
+
+  /*-----------------------------------------------------------------------------*/
