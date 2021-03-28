@@ -334,9 +334,31 @@ All requests are on this <a href="/docs/queries">path</a>.
 
 <!-- User-interface implementation and connection -->
 # User-interface implementation and connection
-If your computer already has PHP and Composer installed, you may create a new Laravel project by using Composer. After the application has been created, you may start Laravel's local development server using the Artisan CLI's `serve` command: 
-`php artisan serve`
+If your computer already has PHP and Composer installed, you may create a new Laravel project by using Composer. After the application has been created, you may start Laravel's local development server using the Artisan CLI's `serve` command. 
 
+1.`php artisan serve` to start the project. Also, if some errors come out here, you can easily fix them by writing the following command on the way to the project : `composer install`
+<img src="https://sun9-49.userapi.com/impg/PNprpjniIE5mZ2SmPsq3DbYtU5Fg9lyaAvHsjQ/pYyRGK6LCZc.jpg?size=701x351&quality=96&sign=eef1c4d38ac0c4e651e241b310c4f89a&type=album">
+
+2.`npm run watch` to start the front.Also, if some errors come out here, you can easily fix them by writing the following command on the way to the project : `npm install .`
+And after that, a message should be sent about the successful launch of the project
+<img src="https://sun9-56.userapi.com/impg/4nCTe9FQ14iSzPsB3QDHcFGRxCJFO9a0pjXj5A/9Q6VUhu5QLg.jpg?size=1093x418&quality=96&sign=4fe8ec099c2d3c592981e0d77a7fb05d&type=album">
+
+3.`php artisan migrate` to create tables locally at home, you will need to open phpMyAdmin, then create a new database 'triplea' and use the following command to create tables in it
+<img src="https://sun9-55.userapi.com/impg/mldyKyZ9RduIDa7JJcDODtxpqAsBH5ymbqK29w/yOOtnDRtO7I.jpg?size=1858x489&quality=96&sign=bffe82db2ba34f0fa29cf1254f624d1d&type=album">
+
+
+4.`php artisan db:seed` To write to the database from our dataset and creates a default user. Each request will take a certain amount of time, as long as the dataset is loaded for each request, and this is 5.5 k of data, it will take a long time.
+<img src="https://sun9-18.userapi.com/impg/b0uXFlSgxwkgt6fjeRbh-1A64ZqVqQEcYamW5Q/DEkC6vPGI3M.jpg?size=1632x430&quality=96&sign=58c8dd78155faa98e9d57f7245ca44a3&type=album">
+
+5.Also, when you start the project, you need to generate a keyb using the following command `php artisan key:generate`
+<img src="https://sun9-37.userapi.com/impg/uxty49OxsKBlA12ShtY3LW1giJ0fhL5Q7w3xlg/dtL7ekoYRho.jpg?size=660x54&quality=96&sign=dcc1168faad37262a18b90b617242181&type=album">
+
+6.And after all the installations, you can run our web application locally
+<img src="https://sun9-69.userapi.com/impg/2cBDNS_ywtw3W4hDtTtAb_B9rd-o1jZxkFLmYw/V9DrP8ztqtg.jpg?size=1723x472&quality=96&sign=b8e0e27c469002ff03bf9592e002b18f&type=album">
+
+7.Login details (Depending on who logs in) The initial pages will be different, so use two login methods)
+`login: admin pass: 123456`
+`login: manager pass: 123456`
 
 
 ## Programming languages, design and frontend creation
@@ -374,14 +396,14 @@ Our stack of technologies fell on this choice:
 <ol>   
    <li><a>HTML + CSS + Bootstrap - frontend development. We took many of the templates from bootstrap.
 </a></li>
-  <li><a>PHP + Laravel - backend development.</a></li>
-  <li><a>MySQL - database.</a></li>
+  <li><a>PHP + Laravel - backend development. PHP can interact with many different database languages including MySQL. We work with MySQL since this is also a free language so it makes sense to use PHP</a></li>
+  <li><a>MySQL - database. Since MySQL is easy to manage and also most common to use in web databases. It can be used to store anything from a single record of information to a huge amount of information, such as for our website.</a></li>
 </ol>
 
 
 ## Connecting to the database
 <img src="https://user-images.githubusercontent.com/49391323/112751862-d4278600-8fd8-11eb-84d8-213a1880ca53.jpg">
-The values must be specified in the environment. After the Laravel framework creates the connection itself.
+The values must be specified in the environment. After the Laravel framework creates the connection itself. Create .env file with the next content like in .env.example
 
 ## A few words about the backend
 The project was written on the laravel framework. The project is launched by the php artisan serve command. (If all dependencies are installed, if not, you need to run the composer install command) after the project will be launched locally.
