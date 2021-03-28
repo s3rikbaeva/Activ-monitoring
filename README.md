@@ -394,17 +394,17 @@ The project was written on the laravel framework. The project is launched by the
 </ul>
 There is a route in the project by which certain pages are displayed depending on the specified url. Routes respond to a method call from the controller. To display the page, the "index" function is used, which returns the generated page.
 Routes can be viewed in router / web.php
-</br>
+</br></br>
 Controller - contains methods for interacting with the user (displaying, saving, deleting, editing, and so on).
-</br>
+</br></br>
 Models - the main business logic is running. Working with the base, subtraction or something else.
-</br>
+</br></br>
 For example: displaying the ru / employees page. When you follow this link, a method from the employees controller index is called through the route. The index method refers to the employees model, where your sql queries are written. The model returns the received data to the controller, the controller collects and displays the template we need.
-</br>
+</br></br>
 In the index method, it refers to the employees model, where your sql queries are written in turn.
-</br>
+</br></br>
 The model returns the received data to the controller, the controller collects it and displays the template we need.
-</br>
+</br></br>
 
 ## SQL queries in action
 We want to start with the fact that during the implementation of the project, we changed the SQL queries many times, because some queries were not enough to show some data for monitoring. So you can see the updated version of our requests at the following <a href="/docs/queries/">link</a>.
