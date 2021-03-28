@@ -404,7 +404,6 @@ For example: displaying the ru / employees page. When you follow this link, a me
 In the index method, it refers to the employees model, where your sql queries are written in turn.
 </br></br>
 The model returns the received data to the controller, the controller collects it and displays the template we need.
-</br></br>
 
 ## SQL queries in action
 We want to start with the fact that during the implementation of the project, we changed the SQL queries many times, because some queries were not enough to show some data for monitoring. So you can see the updated version of our requests at the following <a href="/docs/queries/">link</a>.
