@@ -342,6 +342,9 @@ If your computer already has PHP and Composer installed, you may create a new La
 ## Programming languages, design and frontend creation
  To begin with, We want to remind you that our project is to monitor the activities of employees, and an important role is played in their perception: the perception of colors, fonts, and the principle of design. Since this design will be seen every day, our designer tried to make everything in warm colors. With such preferences, using the <a href="/docs/TripleA-UseCase-UML.png">UML-diagram</a> of the functions that we described above, we came to the conclusion to make the following pages for the frontend, which you can find at the following <a href="https://www.figma.com/file/jJ3vPhYpjfQd0vBxn3gMIE/Activ-monitoring?node-id=0%3A1">link</a>. I will also attach some parts here:
 <br/>
+<a style="text-align: center;">Login page</a>
+<img src="https://user-images.githubusercontent.com/49391323/112751241-8cebc600-8fd5-11eb-814f-a549ef05838e.png">
+<br/>
 <a style="text-align: center;">Employee page</a>
 <img src="https://sun9-64.userapi.com/impg/swb6meiifEQRB-Jz801K8lyRwZHADK8ubfDcQQ/PiZFxVdUUTk.jpg?size=1280x639&quality=96&sign=295f8d25652eb854754b34ca90321e32&type=album">
 <br/>
