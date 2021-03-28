@@ -345,11 +345,29 @@ If your computer already has PHP and Composer installed, you may create a new La
 <a style="text-align: center;">Login page</a>
 <img src="https://user-images.githubusercontent.com/49391323/112751241-8cebc600-8fd5-11eb-814f-a549ef05838e.png">
 <br/>
+<a style="text-align: center;">Dashboard page for manager</a>
+<img src="https://user-images.githubusercontent.com/49391323/112751455-d4bf1d00-8fd6-11eb-8da1-945ab49e781b.png">
+<br/>
+<a style="text-align: center;">Dashboard page for developer</a>
+<img src="https://user-images.githubusercontent.com/49391323/112751453-d4268680-8fd6-11eb-9cc3-faef88c04c30.png">
+<br/>
+<a style="text-align: center;">Manager page</a>
+<img src="https://user-images.githubusercontent.com/49391323/112751460-d5f04a00-8fd6-11eb-8fab-7dfdb9bc9bff.png">
+<br/>
 <a style="text-align: center;">Employee page</a>
 <img src="https://sun9-64.userapi.com/impg/swb6meiifEQRB-Jz801K8lyRwZHADK8ubfDcQQ/PiZFxVdUUTk.jpg?size=1280x639&quality=96&sign=295f8d25652eb854754b34ca90321e32&type=album">
 <br/>
 <a style="text-align: center;">Employee page for monitoring</a>
 <img src="https://sun9-76.userapi.com/impg/Vguqr2dL_3Q59aP-ZC-neSSvKO2tC5EHsQaMWw/f8zGdDQjtFg.jpg?size=1280x643&quality=96&sign=2ec18d7b0e75a0533012c19753edd6ae&type=album">
+<br/>
+<a style="text-align: center;">Notifications page</a>
+<img src="https://user-images.githubusercontent.com/49391323/112751461-d5f04a00-8fd6-11eb-9a8e-ff5f5a02fbbe.png">
+<br/>
+<a style="text-align: center;">Settings page</a>
+<img src="https://user-images.githubusercontent.com/49391323/112751451-d2f55980-8fd6-11eb-98ed-3c764cbfc0c9.png">
+<br/>
+<a style="text-align: center;">Help page</a>
+<img src="https://user-images.githubusercontent.com/49391323/112751456-d557b380-8fd6-11eb-9661-019e46f6fafa.png">
 <br/>
 For each page, there are specific functions that it performs, so we tried to make a user-friendly UX interface, as the user should be comfortable working with our web application.
 Our stack of technologies fell on this choice:
