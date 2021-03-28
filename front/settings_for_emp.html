@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="logo.png" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="wisth=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Settings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="settings_style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3 class="brand">
+          <span class="ti-eye"></span>
+          <span>Activity Monitoring</span>
+        </h3>
+        <label for="sidebar-toggle" class="ti-menu-alt"></label>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="dashboard_developer.html">
+              <span class="ti-menu"></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="notifications_for_emp.html">
+              <span class="ti-bell"></span>
+              <span>Notifications</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="settings_for_emp.html">
+              <span class="ti-settings"></span>
+              <span>Settings</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="help_for_emp.html">
+              <span class="ti-help"></span>
+              <span>Help</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html">
+              <span class="ti-close"></span>
+              <span>Exit</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <div class="search-wrapper">
+          <span class="ti-search"></span>
+          <input type="search" placeholder="Search" />
+        </div>
+
+        <div class="social-icons">
+          <span class="ti-bell"></span>
+          <span class="ti-comment"></span>
+          <div></div>
+        </div>
+      </header>
+
+      <main><!------------------------------------------------------------->
+
+        <div class="language">
+        <div class="change-lang">Change language: </div>
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">
+              Russion
+            </button>
+            <button type="button" class="toggle-btn" onclick="register()">
+              English
+            </button>
+          </div>
+          <form id="login" class="input-group"></form>
+          <form id="register" class="input-group"></form>
+        </div>
+
+        <div class="change-pass">Change password: </div>
+        <div class="container">
+            <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
+        
+              <div class="form-group">
+                <label for="firstName">Old password</label>
+                <input type="text" id="firstName" name="firstName">
+              </div>
+        
+              <div class="form-group">
+                <label for="latsName">New password</label>
+                <input type="text" id="lastName" name="lastName">
+              </div>
+        
+              <div class="form-group">
+                <label for="email">Repeat new password</label>
+                <input type="email" id="email" name="email">
+              </div>
+        
+              <button type="submit">Change</button>
+            </form>
+        </div>
+
+      </main>
+    </div>
+    <script type="text/javascript" src="settings_script.js"></script>
+  </body>
+</html>
