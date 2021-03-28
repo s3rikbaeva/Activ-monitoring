@@ -337,12 +337,12 @@ All requests are on this <a href="/docs/queries">path</a>.
 
 ## Programming languages, design and frontend creation
  To begin with, We want to remind you that our project is to monitor the activities of employees, and an important role is played in their perception: the perception of colors, fonts, and the principle of design. Since this design will be seen every day, our designer tried to make everything in warm colors. With such preferences, using the <a href="/docs/TripleA-UseCase-UML.png">UML-diagram</a> of the functions that we described above, we came to the conclusion to make the following pages for the frontend, which you can find at the following <a href="https://www.figma.com/file/jJ3vPhYpjfQd0vBxn3gMIE/Activ-monitoring?node-id=0%3A1">link</a>. I will also attach some parts here:
-
-<img src="https://sun9-64.userapi.com/impg/swb6meiifEQRB-Jz801K8lyRwZHADK8ubfDcQQ/PiZFxVdUUTk.jpg?size=1280x639&quality=96&sign=295f8d25652eb854754b34ca90321e32&type=album">
+<br/>
 <a style="text-align: center;">Employee page</a>
-
-<img src="https://sun9-76.userapi.com/impg/Vguqr2dL_3Q59aP-ZC-neSSvKO2tC5EHsQaMWw/f8zGdDQjtFg.jpg?size=1280x643&quality=96&sign=2ec18d7b0e75a0533012c19753edd6ae&type=album">
+<img src="https://sun9-64.userapi.com/impg/swb6meiifEQRB-Jz801K8lyRwZHADK8ubfDcQQ/PiZFxVdUUTk.jpg?size=1280x639&quality=96&sign=295f8d25652eb854754b34ca90321e32&type=album">
+<br/>
 <a style="text-align: center;">Employee page for monitoring</a>
+<img src="https://sun9-76.userapi.com/impg/Vguqr2dL_3Q59aP-ZC-neSSvKO2tC5EHsQaMWw/f8zGdDQjtFg.jpg?size=1280x643&quality=96&sign=2ec18d7b0e75a0533012c19753edd6ae&type=album">
 <br/>
 For each page, there are specific functions that it performs, so we tried to make a user-friendly UX interface, as the user should be comfortable working with our web application.
 Our stack of technologies fell on this choice:
@@ -361,7 +361,7 @@ Our stack of technologies fell on this choice:
 
 
 ## SQL queries in action
-We want to start with the fact that during the implementation of the project, we changed the SQL queries many times, because some queries were not enough to show some data for monitoring. So you can see the updated version of our requests at the following link.
+We want to start with the fact that during the implementation of the project, we changed the SQL queries many times, because some queries were not enough to show some data for monitoring. So you can see the updated version of our requests at the following <a href="/docs/queries/">link</a>.
 
 
 ## Data visualization
