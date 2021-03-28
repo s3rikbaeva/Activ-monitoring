@@ -429,7 +429,13 @@ The model returns the received data to the controller, the controller collects i
 
 ## SQL queries in action
 We want to start with the fact that during the implementation of the project, we changed the SQL queries many times, because some queries were not enough to show some data for monitoring. So you can see the updated version of our requests at the following <a href="/docs/queries/">link</a>.
+<img src="https://sun9-13.userapi.com/impg/8WpUmFaPa0EEyXNR0PFZnrYaaTAD4YUTStiitg/CCMH6Dxk-6E.jpg?size=1920x1029&quality=96&sign=b3aa0a8488dac91afd76db1a55a76343&type=album">
+We wrote SQL queries in the Models in the form of functions that were called in the Controllers. For example, let's take the following function getRemainingTime () in DashboardController (), which is called at the following path App\Models\Employees and if you pay attention to the function itself, you might notice that the SQL query that we wrote on the <a href="/docs/queries/3.sql">3rd query</a>. And as you could see it is returned to us in the following form:
+<img src="https://sun9-51.userapi.com/impg/I7ZJSrO3z9CPW8nAYDPwUBLMeb-a0LmolJdbiw/d9GKFivOdIY.jpg?size=1919x909&quality=96&sign=607281a087c81fbfcf83f341e5c3ac57&type=album">
 
 
 ## Data visualization
 We decided to use data visualization, showing statistics of employees who are effective in companies. It shows 5 companies with statistics. It is located on the page of the manager who oversees all this.
+<img src="https://user-images.githubusercontent.com/49391323/112751460-d5f04a00-8fd6-11eb-8fab-7dfdb9bc9bff.png">
+For this visualization, we used the following SQL <a href="/docs/queries/14.sql">14 query</a>. sql, which shows statistics in how many people successfully work in this company.
+
