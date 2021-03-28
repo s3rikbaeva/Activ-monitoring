@@ -27,35 +27,42 @@
       <div class="sidebar-menu">
         <ul>
           <li>
-            <a href="">
+            <a href="dashboard_manager.html">
               <span class="ti-menu"></span>
               <span>Dashboard</span>
             </a>
           </li>
 
           <li>
-            <a href="">
+            <a href="employees.html">
+              <span class="ti-user"></span>
+              <span>Employees</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="notifications.html">
               <span class="ti-bell"></span>
               <span>Notifications</span>
             </a>
           </li>
 
           <li>
-            <a href="">
+            <a href="settings.html">
               <span class="ti-settings"></span>
               <span>Settings</span>
             </a>
           </li>
 
           <li>
-            <a href="">
+            <a href="help.html">
               <span class="ti-help"></span>
               <span>Help</span>
             </a>
           </li>
 
           <li>
-            <a href="">
+            <a href="login.html">
               <span class="ti-close"></span>
               <span>Exit</span>
             </a>
@@ -91,7 +98,51 @@
                     <li>E-mail: bruce.wayne@gmal.com</li>
                     <li>Phone: +7-777-77-77</li>
                   </ul>
-                  <button class="button button1">Assign a task</button>
+
+                  <div class="assign-task">
+                  <button class="modal-btn">Assign a task</button>
+
+                  <div class="modal-bg">
+                    <div class="modal">
+                        <h2>Create Task</h2>
+                        <div class="dropdown">
+                            <button class="dropbtn">Mentorship</button>
+                            <div class="dropdown-content">
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Task</button>
+                            <div class="dropdown-content">
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                                <a href="#">###</a>
+                            </div>
+                        </div>
+                        <label class="emp" for="name">Employee</label>
+                        <input type="text" name="employee">
+                        <label class="emp" for="name">Activity</label>
+                        <input type="text" name="activity">
+                        <label class="emp" for="name">Description</label>
+                        <input class="des" type="text" name="description">
+                        <label class="emp" for="name">Total time</label>
+                        <input class="int" type="text" name="totaltime">
+                        <label class="emp" for="name">Alarm</label>
+                        <input class="alm" type="text" name="alarm">
+                        <button>Create</button>
+                        <button>Cancel</button>
+                    </div>
+                </div>
+              </div>
+
                 </div>
                 <div class="profile-usertitle">
                   <div class="profile-usertitle-name">Robert Downey Jr</div>
@@ -217,6 +268,6 @@
       </main>
       <!-------------------------------------------------------------------->
     </div>
-    <script type="text/javascript" src="employee page script.js"></script>
+    <script type="text/javascript" src="employee_page_script.js"></script>
   </body>
 </html>
