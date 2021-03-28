@@ -380,13 +380,35 @@ Our stack of technologies fell on this choice:
 
 
 ## Connecting to the database
-
+<img src="https://user-images.githubusercontent.com/49391323/112751862-d4278600-8fd8-11eb-84d8-213a1880ca53.jpg">
+The values must be specified in the environment. After the Laravel framework creates the connection itself.
 
 ## A few words about the backend
-
+The project was written on the laravel framework. The project is launched by the php artisan serve command. (If all dependencies are installed, if not, you need to run the composer install command) after the project will be launched locally.
+<ul>   
+   <li><a>The project has .env (the environment in the project is written as .env.example, you must copy and paste without .example) which contains the data for connecting to the database. Port, dB, user, password and so on.
+</a></li>
+  <li><a>For the correct display of the front, you need to run npm by the npm run watch command (if at the end you get errors, try to restart it, the error exits because of not installed dependencies and the running command will try to install all dependencies) if it fails, run npm install.
+</a></li>
+  <li><a>The project structure is divided so that the business logic and controllers are separate (in the app folder) and the visual (front in the resources folder) part are separate.</a></li>
+</ul>
+There is a route in the project by which certain pages are displayed depending on the specified url. Routes respond to a method call from the controller. To display the page, the "index" function is used, which returns the generated page.
+Routes can be viewed in router / web.php
+</br>
+Controller - contains methods for interacting with the user (displaying, saving, deleting, editing, and so on).
+</br>
+Models - the main business logic is running. Working with the base, subtraction or something else.
+</br>
+For example: displaying the ru / employees page. When you follow this link, a method from the employees controller index is called through the route. The index method refers to the employees model, where your sql queries are written. The model returns the received data to the controller, the controller collects and displays the template we need.
+</br>
+In the index method, it refers to the employees model, where your sql queries are written in turn.
+</br>
+The model returns the received data to the controller, the controller collects it and displays the template we need.
+</br>
 
 ## SQL queries in action
 We want to start with the fact that during the implementation of the project, we changed the SQL queries many times, because some queries were not enough to show some data for monitoring. So you can see the updated version of our requests at the following <a href="/docs/queries/">link</a>.
 
 
 ## Data visualization
+We decided to use data visualization, showing statistics of employees who are effective in companies. It shows 5 companies with statistics. It is located on the page of the manager who oversees all this.
