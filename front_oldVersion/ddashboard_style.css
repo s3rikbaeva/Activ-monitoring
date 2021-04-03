@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --main-color: #2b232e;
+  --color-dark: #1d2231;
+  --text-grey: #8390a2;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+#sidebar-toggle {
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: var(--main-color);
+  color: #fff;
+  /*padding: 1rem;*/
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0rem 1rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+.sidebar-menu {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.sidebar li {
+  margin-top: 3rem;
+}
+
+.sidebar a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.sidebar a span:last-child {
+  padding-right: 0.6rem;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+  width: 60px;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child {
+  display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li {
+  display: flex;
+  justify-content: center;
+}
+
+#sidebar-toggle:checked ~ .main-content {
+  margin-left: 60px;
+}
+
+#sidebar-toggle:checked ~ .main-content header {
+  left: 60px;
+}
+
+.main {
+  position: relative;
+  margin-left: 260px;
+}
+
+.second-row {
+  margin-left: 63em;
+  margin-top: 9rem;
+}
+.nav-link {
+  margin-left: 25px;
+  color: #2b232e;
+}
+
+.main-content {
+  position: relative;
+  margin-left: 240px;
+}
+
+header {
+  position: fixed;
+  left: 260px;
+  top: 10px;
+  z-index: 100;
+  width: calc(100% - 240px);
+  background: #fff;
+  height: 60px;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  transition: left 500ms;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons span,
+.social-icons div {
+  margin-left: 2rem;
+}
+
+.social-icons div {
+  height: 50px;
+  width: 50px;
+  margin-right: 1.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(img1.jpg);
+  border-radius: 50%;
+}
+
+.header-dashboard {
+  font: Lato;
+}
+
+.third-row {
+  margin-top: 6rem;
+}

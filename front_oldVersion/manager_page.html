@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="logo.png" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="wisth=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Manager page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="manager_page_style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="sidebar-toggle" />
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3 class="brand">
+          <span class="ti-eye"></span>
+          <span>Activity Monitoring</span>
+        </h3>
+        <label for="sidebar-toggle" class="ti-menu-alt"></label>
+      </div>
+      <div class="sidebar-menu">
+        <ul><li>
+          <a href="dashboard_manager.html">
+            <span class="ti-menu"></span>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="employees.html">
+            <span class="ti-user"></span>
+            <span>Employees</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="notifications.html">
+            <span class="ti-bell"></span>
+            <span>Notifications</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="settings.html">
+            <span class="ti-settings"></span>
+            <span>Settings</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="help.html">
+            <span class="ti-help"></span>
+            <span>Help</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="login.html">
+            <span class="ti-close"></span>
+            <span>Exit</span>
+          </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <div class="search-wrapper">
+          <span class="ti-search"></span>
+          <input type="search" placeholder="Search" />
+        </div>
+
+        <div class="social-icons">
+          <span class="ti-bell"></span>
+          <span class="ti-comment"></span>
+          <div></div>
+        </div>
+      </header>
+      <!-------------------------------------------------------------------->
+      <main>
+        <div class="container">
+          <div class="row profile">
+            <div class="col-md-3">
+              <div class="profile-sidebar">
+                <div class="profile-userpic">
+                  <img src="img4.jpg" class="img-responsive" alt="" />
+                  <ul>
+                    <li>Job Type: C# developer</li>
+                    <li>Work Hours: 9.00 - 17.00</li>
+                    <li>E-mail: bruce.wayne@gmal.com</li>
+                    <li>Phone: +7-777-77-77</li>
+                  </ul>
+                  <button class="button button1">Assign a task</button>
+                </div>
+                <div class="profile-usertitle">
+                  <div class="profile-usertitle-name">Robert Downey Jr</div>
+                  <div class="profile-usertitle-job">Developer</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="profile-content">
+                <!--body information part/section-->
+
+                <div class="content">
+                    <div class="info-card">
+                      <div class="info">
+                        <h3>Top 5</h3>
+                        <div class="info-item">
+                          <div class="summary">
+                            <span class="title">Company name 1</span>
+                            <span class="value">1000</span>
+                          </div>
+                          <div class="slider">
+                            <span id="ds" class="progress"></span>
+                          </div>
+                        </div>
+                        <div class="info-item">
+                          <div class="summary">
+                            <span class="title">Company name 2</span>
+                            <span class="value">230</span>
+                          </div>
+                          <div class="slider">
+                            <span id="ins" class="progress"></span>
+                          </div>
+                        </div>
+                        <div class="info-item">
+                          <div class="summary">
+                            <span class="title">Company name 3</span>
+                            <span class="value">256</span>
+                          </div>
+                          <div class="slider">
+                            <span id="dbs" class="progress"></span>
+                          </div>
+                        </div>
+                        <div class="info-item">
+                          <div class="summary">
+                            <span class="title">Company name 4</span>
+                            <span class="value">10000</span>
+                          </div>
+                          <div class="slider">
+                            <span id="mail" class="progress"></span>
+                          </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="summary">
+                              <span class="title">Company name 5</span>
+                              <span class="value">2000</span>
+                            </div>
+                            <div class="slider">
+                              <span id="dbs" class="progress"></span>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+              <!--------------------ends here-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-------------------------------------------------------------------->
+    </div>
+    <script type="text/javascript" src="manager page script.js"></script>
+  </body>
+</html>
