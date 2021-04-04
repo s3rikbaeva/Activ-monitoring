@@ -45,12 +45,15 @@
       <li>
           <a href="#user-interface-implementation-and-connection">User-interface implementation and connection</a>
           <ul>
-            <li><a href="#programming-languages,-design-and-frontend-creation">Programming languages, design and frontend creation</a></li>
+            <li><a href="#programming-languages-design-and-frontend-creation">Programming languages, design and frontend creation</a></li>
             <li><a href="#connecting-to-the-database">Connecting to the database</a></li>
             <li><a href="#a-few-words-about-the-backend">A few words about the backend</a></li>
             <li><a href="#sql-queries-in-action">SQL queries in action</a></li>
             <li><a href="#data-visualization">Data visualization</a></li>
           </ul>
+      </li>
+      <li>
+         <a href="#sql-to-relational-algebra-ra-operators">SQL to Relational Algebra (RA) operators</a>
       </li>
   </ol>
 </details>
@@ -439,3 +442,6 @@ We decided to use data visualization, showing statistics of employees who are ef
 <img src="https://user-images.githubusercontent.com/49391323/112751460-d5f04a00-8fd6-11eb-8fab-7dfdb9bc9bff.png">
 For this visualization, we used the following SQL <a href="/docs/queries/14.sql">14 query</a>. sql, which shows statistics in how many people successfully work in this company.
 
+<!-- SQL to Relational Algebra (RA) operators -->
+# SQL to Relational Algebra (RA) operators
+In this phase, we converted our <b>SQL queries</b> that we wrote earlier to <b>RA operators</b>. Out of the 15 provided, we selected the queries that we considered to be structurally complicated. Namely, queries that show some statistics, which we indicated in the phase above (User-interface implementation and connection). However, we found that other queries, except for those that we chose, are extremely similar and there is no point in taking and writing the same thing. To your attention we present our conversions at the following link: <a href="/docs/Relational Algebra operators/">RA operators</a>
