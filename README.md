@@ -53,7 +53,7 @@
           </ul>
       </li>
       <li>
-         <a href="#sql-to-relational-algebra-(ra)-operators">SQL to Relational Algebra (RA) operators</a>
+         <a href="#sql-to-relational-algebra-ra-operators">SQL to Relational Algebra (RA) operators</a>
       </li>
   </ol>
 </details>
