@@ -24,3 +24,5 @@ FROM employee e JOIN (project p JOIN employee_record er)
 (employee ✶ employee_record) ✶ project (0 + 0) = 0 tuples
 (project ✶ employee) ✶ employee_record (0 + 0) = 0 tuples
 (project ✶ employee_record) ✶ employee (31516996 + 0) = 31516996 tuples
+
+--because of here no datas selected here it won't take much time but we have also large data which can be implemented in couple of seconds
