@@ -24,3 +24,5 @@ FROM employee e JOIN (project p JOIN employee_record er ON p.projectID = 100)
 (employee ✶ employee_record) ✶ project (5614 + 1) = 5615 tuples
 (project ✶ employee) ✶ employee_record (1 + 1) = 2 tuples
 (project ✶ employee_record) ✶ employee (1 + 1) = 2 tuples
+
+--here will be the same as in the our 3rd query
