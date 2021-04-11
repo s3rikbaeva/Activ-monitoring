@@ -27,3 +27,6 @@ FROM employee_record er JOIN (employee e JOIN task)
 --TIME FOR testQuery: 0.0020017623901367188 seconds
 
 --in this queries we used more datas, so accordingly, it would take us more time, but not more than a second
+
+--Analyze 
+--We decided that query 2 is the fastest and most efficient, although for passing tuples 1 and 2 of the same calculation time, query 2 wins.

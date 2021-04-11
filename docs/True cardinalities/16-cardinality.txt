@@ -29,3 +29,6 @@ FROM task t JOIN (employee_record ea JOIN employee e ON ea.employeeID = e.employ
 --TIME FOR testQuery: 0.0020012855529785156 seconds
 (employee_record ✶ employee) ✶ task ✶ project (2 + 2) = 4 tuples
 --TIME FOR testQuery: 0.0019989013671875 seconds
+
+--Analyze 
+--We decided that query 1 is the fastest and most efficient, although for passing tuples 1 and 2 and 3 of the same calculation time, query 1 wins.

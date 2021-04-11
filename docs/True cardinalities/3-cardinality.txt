@@ -26,3 +26,6 @@ FROM employee e JOIN (project p JOIN employee_record er ON p.projectID = 100)
 --TIME FOR testQuery: 0.003005504608154297 seconds
 (project ✶ employee_record) ✶ employee (1 + 1) = 2 tuples
 --TIME FOR testQuery: 0.004000425338745117 seconds
+
+--Analyze 
+--We decided that query 2 is the fastest and most efficient, although for passing tuples 2 and 3 of the same calculation time, query 2 wins.
