@@ -19,6 +19,8 @@ FROM employee_record er JOIN (employee e JOIN task)
             ON e.employeeID = er.employeeID AND er.employeeRecordID = t.employeeRecordID;
 
 --Join cardinalities--
-(employee ✶ employee_record) ✶ task (5613 + 5612) = 11225 tuples  --
+(employee ✶ employee_record) ✶ task (5613 + 5612) = 11225 tuples
 (employee_record ✶ task) ✶ employee (5613 + 5612) = 11225 tuples
 (employee ✶ task) ✶ employee_record (31505769 + 5612) = 31511381 tuples
+
+--in this queries we used more datas, so accordingly, it would take us more time, but not more than a second
