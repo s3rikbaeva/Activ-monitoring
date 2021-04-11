@@ -55,6 +55,9 @@
       <li>
          <a href="#sql-to-relational-algebra-ra-operators">SQL to Relational Algebra (RA) operators</a>
       </li>
+      <li>
+         <a href="#calculating-true-cardinalities-and-plan-evaluation">Calculating true cardinalities and plan evaluation</a>
+      </li>
   </ol>
 </details>
 
@@ -445,3 +448,7 @@ For this visualization, we used the following SQL <a href="/docs/queries/14.sql"
 <!-- SQL to Relational Algebra (RA) operators -->
 # SQL to Relational Algebra (RA) operators
 In this phase, we converted our <b>SQL queries</b> that we wrote earlier to <b>RA operators</b>. Out of the 15 provided, we selected the queries that we considered to be structurally complicated. Namely, queries that show some statistics, which we indicated in the phase above (User-interface implementation and connection). However, we found that other queries, except for those that we chose, are extremely similar and there is no point in taking and writing the same thing. To your attention we present our conversions at the following link: <a href="/docs/Relational Algebra operators/">RA operators</a>
+
+<!-- Calculating true cardinalities and plan evaluation -->
+# Calculating true cardinalities and plan evaluation
+This week we dealt with query optimization. And how we were surprised that depending on the spelling of the tables and their <b>joining</b>, the number at which the data is collected changes and can this bypass us for good or bad. For your example, we collected <b>7 queries</b> based on the previous phase and built an optimization. Also, in each file, you can read an <b>analysis</b> of how to connect the tables will be more convenient and practical. You can go to the following link: <a href="/docs/True cardinalities/">Calculating true cardinalities and plan evaluation</a>
