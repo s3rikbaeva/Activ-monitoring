@@ -23,5 +23,8 @@ FROM job j JOIN (employee_record er JOIN task t ON er.employeeRecordID = t.emplo
 
 --Join cardinalities--
 (employee_record ✶ task ✶ job) ✶ employee (2 + 2) = 4 tuples
+--TIME FOR testQuery: 0.0010001659393310547 seconds
 (project ✶ employee) ✶ employee_record (2 + 2) = 4 tuples
+--TIME FOR testQuery: 0.0009999275207519531 seconds
 (project ✶ employee_record) ✶ employee (2 + 2) = 4 tuples
+--TIME FOR testQuery: 0.001001119613647461 seconds
