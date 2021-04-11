@@ -1,9 +1,0 @@
-SELECT COUNT(*)
-FROM company 
-WHERE employeeID = ANY(SELECT employeeID FROM employee_record WHERE performanceRating = 5);
-
---Possible execution plans--
---There is no execution plan
-
---Join cardinalities--
-|T'| = 5614 / 181 = 31 tuples

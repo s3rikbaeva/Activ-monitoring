@@ -1,0 +1,24 @@
+SELECT COUNT(*)
+FROM employee e, employee_record er,task t 
+WHERE e.employeeID = er.employeeID AND er.employeeRecordID = t.employeeRecordID;
+
+--Possible execution plans--
+--(employee ✶ employee_record) ✶ task
+SELECT COUNT(*) 
+FROM task t JOIN (employee e JOIN employee_record er ON e.employeeID = er.employeeID)
+            ON er.employeeRecordID = t.employeeRecordID;
+
+--(employee_record ✶ task) ✶ employee
+SELECT COUNT(*) 
+FROM employee e JOIN (employee_record er JOIN task t ON er.employeeRecordID = t.employeeRecordID)
+            ON e.employeeID = er.employeeID;
+
+--(employee ✶ task) ✶ employee_record
+SELECT COUNT(*) 
+FROM employee_record er JOIN (employee e JOIN task)
+            ON e.employeeID = er.employeeID AND er.employeeRecordID = t.employeeRecordID;
+
+--Join cardinalities--
+(employee ✶ employee_record) ✶ task (5613 + 5612) = 11225 tuples
+(employee_record ✶ task) ✶ employee (5613 + 5612) = 11225 tuples
+(employee ✶ task) ✶ employee_record (31505769 + 5612) = 31511381 tuples
