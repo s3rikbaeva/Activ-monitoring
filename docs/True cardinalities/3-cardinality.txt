@@ -20,5 +20,6 @@ FROM employee e JOIN (project p JOIN employee_record er ON p.projectID = 100)
 
 --Join cardinalities--
 (employee ✶ employee_record) ✶ project (5614 + 1) = 5615 tuples
+--Since there are more tuples here, it is clear that it will take a little longer than the following ones. The more data, the longer it takes.
 (project ✶ employee) ✶ employee_record (1 + 1) = 2 tuples
 (project ✶ employee_record) ✶ employee (1 + 1) = 2 tuples
