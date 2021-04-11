@@ -22,7 +22,10 @@ FROM employee e JOIN (project p JOIN employee_record er ON p.projectID = 100)
 
 --Join cardinalities--
 (employee ✶ employee_record) ✶ project (5614 + 1) = 5615 tuples
+--TIME FOR testQuery: 0.002000570297241211 seconds
 (project ✶ employee) ✶ employee_record (1 + 1) = 2 tuples
+--TIME FOR testQuery: 0.0019958019256591797 seconds
 (project ✶ employee_record) ✶ employee (1 + 1) = 2 tuples
+--TIME FOR testQuery: 0.0020003318786621094 seconds
 
 --here will be the same as in the our 3rd query
