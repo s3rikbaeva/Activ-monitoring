@@ -16,7 +16,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#project-description-and-data-preparation">Project description and data preparation</a>
+      <a href="#project-description-and-data-preparation">Project description and data preparation</a> 💬
       <ul>
         <li><a href="#goal-of-the-project">Goal of the project</a></li>
         <li><a href="#implementation">Implementation</a></li>
@@ -24,7 +24,7 @@
       </ul>
     </li>
     <li>
-      <a href="#project-use-case-diagram-and-questions-over-the-data">Project Use-Case diagram and questions over the data</a>
+      <a href="#project-use-case-diagram-and-questions-over-the-data">Project Use-Case diagram and questions over the data</a> 👀
       <ul>
         <li><a href="#questions">Questions</a></li>
         <li><a href="#dataset">Dataset</a></li>
@@ -32,7 +32,7 @@
       </ul>
     </li>
     <li>
-      <a href="#data-modeling-and-database-design">Data modeling and database design</a>
+      <a href="#data-modeling-and-database-design">Data modeling and database design</a> 🌍
       <ul>
         <li><a href="#er-diagram">ER diagram</a></li>
         <li><a href="#ddl-queries">DDL queries</a></li>
@@ -40,10 +40,10 @@
       </ul>
     </li>
       <li>
-          <a href="#sql-queries">SQL Queries</a>
+          <a href="#sql-queries">SQL Queries</a> 📺
       </li>
       <li>
-          <a href="#user-interface-implementation-and-connection">User-interface implementation and connection</a>
+          <a href="#user-interface-implementation-and-connection">User-interface implementation and connection</a> 🎈
           <ul>
             <li><a href="#programming-languages-design-and-frontend-creation">Programming languages, design and frontend creation</a></li>
             <li><a href="#connecting-to-the-database">Connecting to the database</a></li>
@@ -53,10 +53,10 @@
           </ul>
       </li>
       <li>
-         <a href="#sql-to-relational-algebra-ra-operators">SQL to Relational Algebra (RA) operators</a>
+         <a href="#sql-to-relational-algebra-ra-operators">SQL to Relational Algebra (RA) operators</a> 📟
       </li>
       <li>
-         <a href="#calculating-true-cardinalities-and-plan-evaluation">Calculating true cardinalities and plan evaluation</a>
+         <a href="#calculating-true-cardinalities-and-plan-evaluation">Calculating true cardinalities and plan evaluation</a> ⌚
       </li>
   </ol>
 </details>
