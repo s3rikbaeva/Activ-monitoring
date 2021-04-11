@@ -1,0 +1,26 @@
+SELECT COUNT(*)
+FROM employee e, project p, employee_record er
+WHERE e.employeeID = (SELECT employeeID FROM employee WHERE inTime = CURRENT_DATE) 
+AND e.employeeID = p.employeeID
+AND e.employeeID = er.employeeID;
+
+--Possible execution plans--
+--(employee ✶ employee_record) ✶ project
+SELECT COUNT(*) 
+FROM project p JOIN (employee e JOIN employee_record er ON e.employeeID = er.employeeID AND e.employeeID = (SELECT employeeID FROM employee WHERE inTime = CURRENT_DATE))
+            ON p.employeeID = e.employeeID;
+
+--(project ✶ employee) ✶ employee_record
+SELECT COUNT(*) 
+FROM employee_record er JOIN (project p JOIN employee e ON p.employeeID = e.employeeID AND e.employeeID = (SELECT employeeID FROM employee WHERE inTime = CURRENT_DATE))
+            ON e.employeeID = er.employeeID;
+
+--(project ✶ employee_record) ✶ employee
+SELECT COUNT(*) 
+FROM employee e JOIN (project p JOIN employee_record er)
+            ON e.employeeID = er.employeeID AND p.employeeID = e.employeeID AND e.employeeID = (SELECT employeeID FROM employee WHERE inTime = CURRENT_DATE);
+
+--Join cardinalities--
+(employee ✶ employee_record) ✶ project (0 + 0) = 0 tuples
+(project ✶ employee) ✶ employee_record (0 + 0) = 0 tuples
+(project ✶ employee_record) ✶ employee (31516996 + 0) = 31516996 tuples

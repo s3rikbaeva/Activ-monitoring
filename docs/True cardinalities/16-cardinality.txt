@@ -1,0 +1,28 @@
+SELECT COUNT(*)
+FROM employee e, project p, task t, employee_record ea
+WHERE e.employeeID = p.employeeID AND ea.employeeID = e.employeeID 
+AND ea.employeeRecordID = t.employeeRecordID; 
+
+--Possible execution plans--
+--(employee ✶ employee_record ✶ task) ✶ project
+SELECT COUNT(*) 
+FROM project p JOIN (employee e JOIN employee_record ea ON ea.employeeID = er.employeeID 
+               JOIN task t ON ea.employeeRecordID = t.employeeRecordID)
+            ON p.employeeID = e.employeeID;
+
+--(project ✶ employee ✶ employee_record) ✶ task
+SELECT COUNT(*) 
+FROM task t JOIN (project p JOIN employee e ON e.employeeID = p.employeeID 
+               JOIN employee_record ea ON ea.employeeID = e.employeeID)
+            ON ea.employeeRecordID = t.employeeRecordID;
+
+--(employee_record ✶ employee) ✶ task ✶ project
+SELECT COUNT(*) 
+FROM task t JOIN (employee_record ea JOIN employee e ON ea.employeeID = e.employeeID)
+            ON ea.employeeRecordID = t.employeeRecordID 
+            JOIN project p ON e.employeeID = p.employeeID
+
+--Join cardinalities--
+(employee ✶ employee_record ✶ task) ✶ project (2 + 2) = 4 tuples
+(project ✶ employee ✶ employee_record) ✶ task (2 + 2) = 4 tuples
+(employee_record ✶ employee) ✶ task ✶ project (2 + 2) = 4 tuples
