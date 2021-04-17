@@ -466,5 +466,5 @@ In this week we are going to check the runtime of queries, that respond to funct
 10. The system specifies the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently. </br>
 12. The system will give the manager information about the activities of a particular developer. </br>
 13. The system will give the manager information about the status of each task of certain developers. </br>
-14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company.  </br>
+14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company.  </br> </br>
 Also, we are given to check for 5 times and get some average value from these times. We will upload our solutions to the next <a href="Activ-monitoring/docs/Query optimization/">link</a> but also will summarize the average value and optimizations in this readme. In general, for this task, we are using this script, that our instructor provided for us, but we are a little change some coding and added our database to SQLite. You also can see this script by the <a href="Activ-monitoring/docs/Query optimization/script/test-query/">link</a>.
