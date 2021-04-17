@@ -32,11 +32,13 @@ def testQuery(_conn):
 
     try:
         sql = """ 
-            SELECT e.employeeID
-            FROM employee e, project p, employee_record er
-            WHERE e.employeeID = p.employeeID
-            AND e.employeeID = er.employeeID
-            AND e.employeeID = (SELECT employeeID FROM employee WHERE inTime = CURRENT_DATE);
+            SELECT e.employeeID, CONCAT(e.firstName,' ',e.lasName) as "fullname", c.name, e.yearsAtCompany
+            FROM employee e
+            JOIN company c
+            JOIN employee_record erd
+            WHERE e.employeeID = c.employeeID
+            AND e.employeeID = erd.employeeID
+            AND e.yearsAtCompany > 5 ORDER BY 4 DESC; 
         """
         print(sql)
 
