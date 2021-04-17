@@ -32,9 +32,9 @@ def testQuery(_conn):
 
     try:
         sql = """ 
-            SELECT COUNT(*)
-            FROM task t, employee_record er, employee e
-            WHERE e.employeeID = er.employeeID AND er.employeeRecordID = t.employeeRecordID;
+            SELECT er.employeeID, (er.standardHours-er.spentTime) as "remaining_time" 
+            FROM employee_record er, project p, employee e 
+            WHERE e.employeeID = er.employeeID AND e.employeeID = p.employeeID AND projectID = 100;
         """
         print(sql)
 
