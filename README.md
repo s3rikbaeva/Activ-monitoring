@@ -460,10 +460,10 @@ This week we dealt with query optimization. And how we were surprised that depen
 <!-- Speed performance evaluation -->
 # Speed performance evaluation
 In this week we are going to check the runtime of queries, that respond to functionalities and give some feedback about this time given and conclude it with our meaning about optimization. So, first of all we are given <b>7 functionalities</b> that we gonna check: </br> </br>
+2. The system outputs data to the project manager, which will show the amount of time the developer has worked on the project a certain amount time to monitor the number of hours of work. </br>
 3. The system makes an estimate of the remaining time of the specified project and outputs the information to the project manager. </br>
 5. The system outputs data to the project manager, which will contain developers who have a certain amount of working time. </br>
 7. The system allows the project manager to see statistics that indicate how many developers have been working in a particular company for more than 5 years. </br>
-10. The system specifies the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently. </br>
 12. The system will give the manager information about the activities of a particular developer. </br>
 13. The system will give the manager information about the status of each task of certain developers. </br>
 14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company.  </br> </br>
