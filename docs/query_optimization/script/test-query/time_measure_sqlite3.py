@@ -32,9 +32,11 @@ def testQuery(_conn):
 
     try:
         sql = """ 
-            SELECT er.employeeID, (er.standardHours-er.spentTime) as "remaining_time" 
-            FROM employee_record er, project p, employee e 
-            WHERE e.employeeID = er.employeeID AND e.employeeID = p.employeeID AND projectID = 100;
+            SELECT e.employeeID
+            FROM employee e, project p, employee_record er
+            WHERE e.employeeID = p.employeeID
+            AND e.employeeID = er.employeeID
+            AND e.employeeID = (SELECT employeeID FROM employee WHERE inTime = CURRENT_DATE);
         """
         print(sql)
 
