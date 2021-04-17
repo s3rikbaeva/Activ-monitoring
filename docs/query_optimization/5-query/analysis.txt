@@ -1,0 +1,20 @@
+SELECT e.employeeID
+FROM employee e, project p, employee_record er
+WHERE e.employeeID = p.employeeID
+AND e.employeeID = er.employeeID
+AND e.employeeID = (SELECT employeeID FROM employee WHERE inTime = CURRENT_DATE);
+
+--Seconds:
+TIME FOR testQuery: 0.02902841567993164 seconds
+TIME FOR testQuery: 0.022997617721557617 seconds
+TIME FOR testQuery: 0.03999614715576172 seconds
+TIME FOR testQuery: 0.023997783660888672 seconds
+TIME FOR testQuery: 0.021999597549438477 seconds
+
+--Milliseconds
+TIME FOR testQuery: 29.028415679931640625 ms
+TIME FOR testQuery: 22.997617721557617188 ms
+TIME FOR testQuery: 39.99614715576171875 ms
+TIME FOR testQuery: 23.997783660888671875 ms
+TIME FOR testQuery: 21.999597549438476563 ms
+

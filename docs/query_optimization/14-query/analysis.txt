@@ -1,0 +1,18 @@
+SELECT companyID, name, count(employeeId) as number_of_employees 
+FROM company WHERE employeeID = ANY(SELECT employeeID FROM employee_record WHERE performanceRating = 5) 
+GROUP BY name;
+
+--Seconds:
+TIME FOR testQuery: 6.70875883102417 seconds
+TIME FOR testQuery: 6.24399209022522 seconds
+TIME FOR testQuery: 6.818819284439087 seconds
+TIME FOR testQuery: 6.16800856590271 seconds
+TIME FOR testQuery: 6.16800856590271 seconds
+
+--Milliseconds
+TIME FOR testQuery: 6708.758831024169922 ms
+TIME FOR testQuery: 6243.992090225219727 ms
+TIME FOR testQuery: 6818.8192844390869141 ms
+TIME FOR testQuery: 6168.008565902709961 ms
+TIME FOR testQuery: 6168.008565902709961 ms
+

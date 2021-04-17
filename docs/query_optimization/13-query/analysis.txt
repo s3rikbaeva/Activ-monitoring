@@ -1,0 +1,17 @@
+SELECT t.taskDescription FROM task t, employee_record er, employee e
+WHERE e.employee_id = er.employee_id AND er.employeeRecordID = t.employeeRecordID;
+
+--Seconds:
+TIME FOR testQuery: 11.269125699996948 seconds
+TIME FOR testQuery: 11.472522258758545 seconds
+TIME FOR testQuery: 11.695026159286499 seconds
+TIME FOR testQuery: 15.409469604492188 seconds
+TIME FOR testQuery: 12.621530532836914 seconds
+
+--Milliseconds
+TIME FOR testQuery: 11269.125699996948242 ms
+TIME FOR testQuery: 11472.522258758544922 ms
+TIME FOR testQuery: 11695.026159286499023 ms
+TIME FOR testQuery: 15409.4696044921875 ms
+TIME FOR testQuery: 12621.530532836914063 ms
+

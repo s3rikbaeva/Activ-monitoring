@@ -1,7 +1,5 @@
---What additional information is there for a particular developer, if you enter it in the search?
+--Show the list with the name of the projects that perform employees and the status of this project for the "Employees" page.
 
-SELECT e.employeeID, CONCAT(e.firstName,' ',e.lasName) as "fullname", ea.monthlyIncome, 
-ea.maritalStatus, ea.environmentSatisfaction, j.jobLevel, j.jobRole 
-FROM employee e, employee_additional_info ea, task t, job j, employee_record er 
-WHERE e.employeeID = ea.employeeID AND er.employeeID = e.employeeID 
-AND er.employeeRecordID = t.employeeRecordID AND j.jobID = t.jobID;
+SELECT p.projectName, CONCAT(e.firstName,' ',e.lasName) as "fullname", t.status AS "status"
+FROM employee e, project p, task t, employee_record ea
+WHERE e.employeeID = p.employeeID AND ea.employeeID = e.employeeID AND ea.employeeRecordID = t.employeeRecordID; 

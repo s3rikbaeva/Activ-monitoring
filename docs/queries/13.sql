@@ -1,5 +1,4 @@
---What is the number of the manager and the project that he worked on in a certain period of time?
+--Show a description of each task associated with the employee
 
-SELECT m.managerID, m.name, p.projectID, p.projectName 
-FROM manager m, project p 
-WHERE m.managerID = p.managerID;
+SELECT t.taskDescription FROM task t, employee_record er, employee e
+WHERE e.employee_id = er.employee_id AND er.employeeRecordID = t.employeeRecordID;

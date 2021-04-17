@@ -1,0 +1,19 @@
+SELECT m.managerID, p.projectID, e.employeeID, er.spentTime 
+FROM manager m, project p, employee e, employee_record er 
+WHERE m.managerID = p.managerID AND p.employeeID = e.employeeID 
+AND e.employeeID = er.employeeID AND m.managerID = 100;
+
+--Seconds:
+TIME FOR testQuery: 0.012000322341918945 seconds
+TIME FOR testQuery: 0.012000322341918945 seconds
+TIME FOR testQuery: 0.012000322341918945 seconds
+TIME FOR testQuery: 0.013007879257202148 seconds
+TIME FOR testQuery: 0.010999917984008789 seconds
+
+--Milliseconds
+TIME FOR testQuery: 12.000322341918945313 ms
+TIME FOR testQuery: 12.000322341918945313 ms
+TIME FOR testQuery: 12.000322341918945313 ms
+TIME FOR testQuery: 13.007879257202148438 ms
+TIME FOR testQuery: 10.999917984008789063 ms
+

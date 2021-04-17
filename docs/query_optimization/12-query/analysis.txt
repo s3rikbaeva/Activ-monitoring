@@ -1,0 +1,18 @@
+SELECT p.projectName, CONCAT(e.firstName,' ',e.lasName) as "fullname", t.status AS "status"
+FROM employee e, project p, task t, employee_record ea
+WHERE e.employeeID = p.employeeID AND ea.employeeID = e.employeeID AND ea.employeeRecordID = t.employeeRecordID; 
+
+--Seconds:
+TIME FOR testQuery: 4.765822887420654 seconds
+TIME FOR testQuery: 7.019697427749634 seconds
+TIME FOR testQuery: 4.816008806228638 seconds
+TIME FOR testQuery: 6.334520578384399 seconds
+TIME FOR testQuery: 4.827646017074585 seconds
+
+--Milliseconds
+TIME FOR testQuery: 4765.8228874206542969 ms
+TIME FOR testQuery: 7019.6974277496337891 ms
+TIME FOR testQuery: 4816.0088062286376953 ms
+TIME FOR testQuery: 6334.5205783843994141 ms
+TIME FOR testQuery: 4827.6460170745849609 ms
+
