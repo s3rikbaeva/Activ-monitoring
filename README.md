@@ -58,6 +58,9 @@
       <li>
          <a href="#calculating-true-cardinalities-and-plan-evaluation">Calculating true cardinalities and plan evaluation</a> ⌚
       </li>
+      <li>
+         <a href="#speed-performance-evaluation">Speed performance evaluation</a> 💫
+      </li>
   </ol>
 </details>
 
@@ -452,3 +455,16 @@ In this phase, we converted our <b>SQL queries</b> that we wrote earlier to <b>R
 # Calculating true cardinalities and plan evaluation
 This week we dealt with query optimization. And how we were surprised that depending on the spelling of the tables and their <b>joining</b>, the number at which the data is collected changes and can this bypass us for good or bad. For your example, we collected <b>7 queries</b> based on the previous phase and built an optimization. Also, in each file, you can read an <b>analysis</b> of how to connect the tables will be more convenient and practical. You can go to the following link: <a href="/docs/True cardinalities/">Calculating true cardinalities and plan evaluation</a> </br>
 <b>Important!</b> We would like to add that in all the tables we have the same amount of data (rows = 5614 approximately), so in some cases, with different query plans, the same number of tuples comes out. So we built a script similiar to <b>Lab3</b> to find out which query is still faster, using seconds. So you can also view the analysis in each txt file in the comments.
+
+
+<!-- Speed performance evaluation -->
+# Speed performance evaluation
+In this week we are going to check the runtime of queries, that respond to functionalities and give some feedback about this time given and conclude it with our meaning about optimization. So, first of all we are given <b>7 functionalities</b> that we gonna check:
+3. The system makes an estimate of the remaining time of the specified project and outputs the information to the project manager.
+5. The system outputs data to the project manager, which will contain developers who have a certain amount of working time.
+7. The system allows the project manager to see statistics that indicate how many developers have been working in a particular company for more than 5 years.
+10. The system specifies the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently.
+12. The system will give the manager information about the activities of a particular developer.
+13. The system will give the manager information about the status of each task of certain developers.
+14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company. 
+Also, we are given to check for 5 times and get some average value from these times. We will upload our solutions to the next <a href="Activ-monitoring/docs/Query optimization/">link</a> but also will summarize the average value and optimizations in this readme. In general, for this task, we are using this script, that our instructor provided for us, but we are a little change some coding and added our database to SQLite. You also can see this script by the <a href="Activ-monitoring/docs/Query optimization/script/test-query/">link</a>.
