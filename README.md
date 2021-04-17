@@ -459,12 +459,12 @@ This week we dealt with query optimization. And how we were surprised that depen
 
 <!-- Speed performance evaluation -->
 # Speed performance evaluation
-In this week we are going to check the runtime of queries, that respond to functionalities and give some feedback about this time given and conclude it with our meaning about optimization. So, first of all we are given <b>7 functionalities</b> that we gonna check:
-3. The system makes an estimate of the remaining time of the specified project and outputs the information to the project manager.
-5. The system outputs data to the project manager, which will contain developers who have a certain amount of working time.
-7. The system allows the project manager to see statistics that indicate how many developers have been working in a particular company for more than 5 years.
-10. The system specifies the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently.
-12. The system will give the manager information about the activities of a particular developer.
-13. The system will give the manager information about the status of each task of certain developers.
-14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company. 
+In this week we are going to check the runtime of queries, that respond to functionalities and give some feedback about this time given and conclude it with our meaning about optimization. So, first of all we are given <b>7 functionalities</b> that we gonna check: </br> </br>
+3. The system makes an estimate of the remaining time of the specified project and outputs the information to the project manager. </br>
+5. The system outputs data to the project manager, which will contain developers who have a certain amount of working time. </br>
+7. The system allows the project manager to see statistics that indicate how many developers have been working in a particular company for more than 5 years. </br>
+10. The system specifies the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently. </br>
+12. The system will give the manager information about the activities of a particular developer. </br>
+13. The system will give the manager information about the status of each task of certain developers. </br>
+14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company.  </br>
 Also, we are given to check for 5 times and get some average value from these times. We will upload our solutions to the next <a href="Activ-monitoring/docs/Query optimization/">link</a> but also will summarize the average value and optimizations in this readme. In general, for this task, we are using this script, that our instructor provided for us, but we are a little change some coding and added our database to SQLite. You also can see this script by the <a href="Activ-monitoring/docs/Query optimization/script/test-query/">link</a>.
