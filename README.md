@@ -469,4 +469,14 @@ In this week we are going to check the runtime of queries, that respond to funct
 14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company.  </br> </br>
 Also, we are given to check for 5 times and get some average value from these times. We will upload our solutions to the next <a href="/docs/query_optimization/"> link </a> but also will summarize the average value and optimizations in this readme. In general, for this task, we are using this script, that our instructor provided for us, but we are a little change some coding and added our database to SQLite. You also can see this <a href="/docs/query_optimization/script/test-query/">script</a>.
 <img src="https://sun9-9.userapi.com/impg/4-awK7J6JW9KgdAeRkJYAYiGQRQEfoErNQ-agA/DJa3BIsoQys.jpg?size=1920x1032&quality=96&sign=51dbbb8e347a3fdef65589d841845ff5&type=album">
-
+<br />
+Also you can add our project to SQLite using next commands:
+<br />
+For every functionality query, we write analysis and also added screenshots of runtime executions: <br />
+1. <a href="/docs/query_optimization/2-query/">2-query</a> <br />
+2. <a href="/docs/query_optimization/3-query/">3-query</a> <br />
+3. <a href="/docs/query_optimization/5-query/">5-query</a> <br />
+4. <a href="/docs/query_optimization/7-query/">7-query</a> <br />
+5. <a href="/docs/query_optimization/12-query/">12-query</a> <br />
+6. <a href="/docs/query_optimization/13-query/">13-query</a> <br />
+7. <a href="/docs/query_optimization/14-query/">14-query</a> <br />
