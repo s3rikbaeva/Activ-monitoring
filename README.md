@@ -225,14 +225,13 @@ It was important for us to choose a set of data that we can use in the future. S
 4. The manager can find out about the developer's reports and their details by the specified date that the system will issue.
 5. The system outputs data to the project manager, which will contain developers who have a certain amount of working time.
 6. The manager can find out about certain postponed activity times issued by the system.
-7. The manager can learn more about the developer's work using the system.
-8. The system can give the developer information about his last login.
+7. The system allows the project manager to see statistics that indicate how many developers have been working in a particular company for more than 5 years.8. The system can give the developer information about his last login.
 9. Employees can get information about the project and the people who worked on it and how much time was spent on this project.
-10. The system gives the manager information about the duration of the employee's work in the company.
+10. The system specifies the full name, activity, role of the work in the project, and the time spent on each employee's task who visited recently.
 11. The system can give information to the observer or the manager about the education of an employee.
-12. The system displays complete information about the developers to the manager.
-13. The system gives information about the project numbers and the manager who worked on it.
-14. The system gives out the number of the developer and the project, the level and role of the employee who works on this activity.
+12. The system will give the manager information about the activities of a particular developer.
+13. The system will give the manager information about the status of each task of certain developers.
+14. The system allows the project manager to see statistics that indicate how many developers have successfully worked in the company.
 15. The system provides information about the level of the employee in a certain period of time and the project.
 
 <br />
