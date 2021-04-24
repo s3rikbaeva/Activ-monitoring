@@ -32,9 +32,10 @@ def testQuery(_conn):
 
     try:
         sql = """ 
-           SELECT t.taskDescription FROM task t, employee_record er, employee e
-WHERE e.employeeID = er.employeeID AND er.employeeRecordID = t.employeeRecordID;
-
+          SELECT p.projectName
+FROM task t JOIN (project p JOIN employee e ON e.employeeID = p.employeeID 
+               JOIN employee_record ea ON ea.employeeID = e.employeeID)
+            ON ea.employeeRecordID = t.employeeRecordID;
         """
         print(sql)
 

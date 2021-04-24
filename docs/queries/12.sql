@@ -2,4 +2,5 @@
 
 SELECT p.projectName, CONCAT(e.firstName,' ',e.lasName) as "fullname", t.status AS "status"
 FROM employee e, project p, task t, employee_record ea
-WHERE e.employeeID = p.employeeID AND ea.employeeID = e.employeeID AND ea.employeeRecordID = t.employeeRecordID; 
+WHERE e.employeeID = p.employeeID AND ea.employeeID = e.employeeID 
+AND ea.employeeRecordID = t.employeeRecordID; 
