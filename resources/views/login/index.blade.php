@@ -26,7 +26,7 @@
                     <button type="submit" class="submit-btn">Log in</button>
                 </form>
                 <form id="register" class="input-group" method="post" action="{{route('signup')}}">
-                    {{ csrf_field() }}
+                    @csrf
                     <input type="text" class="input-field" placeholder="User Name"  name="username">
                     <input type="email" class="input-field" placeholder="e-mail"  name="email">
                     <input type="password" class="input-field" placeholder="Enter Password"  name="password">
