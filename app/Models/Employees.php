@@ -68,13 +68,13 @@ class Employees extends Model
         return DB::select($query);
     }
 
-    public static function getDevelopersCount() {
-        return DB::select('SELECT COUNT(e.id) as "devCount"
-                                FROM employees e, records r, projects p
-                                WHERE e.id = r.employee_id
-                                AND  p.employee_id = e.id
-                                AND r.spent_time = 0');
-    }
+    // public static function getDevelopersCount() {
+    //     return DB::select('SELECT COUNT(e.id) as "devCount"
+    //                             FROM employees e, records r, projects p
+    //                             WHERE e.id = r.employee_id
+    //                             AND  p.employee_id = e.id
+    //                             AND r.spent_time = 0');
+    // }
 
     public static function getRemainigTime() {
         return DB::select('SELECT r.employee_id,  p.name, t.task_description as "desc", CONCAT(e.first_name, " ", e.last_name) as "fullname", (r.standard_hours-r.spent_time) as "remaining_time"
