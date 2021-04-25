@@ -61,6 +61,9 @@
       <li>
          <a href="#speed-performance-evaluation">Speed performance evaluation</a> 💫
       </li>
+      <li>
+         <a href="#presentation-and-demo">Presentation and Demo</a> ✍️
+      </li>
   </ol>
 </details>
 
@@ -480,3 +483,7 @@ Also, we are given to check for 5 times and get some average value from these ti
 5. <a href="/docs/query_optimization/12-query/">12-query</a> <br />
 6. <a href="/docs/query_optimization/13-query/">13-query</a> <br />
 7. <a href="/docs/query_optimization/14-query/">14-query</a> <br />
+
+<!-- Presentation and Demo -->
+# Presentation and Demo
+Link to the report: <a href="/docs/ProjectFinalReport.pdf">ProjectFinalReport.pdf</a> <br />
