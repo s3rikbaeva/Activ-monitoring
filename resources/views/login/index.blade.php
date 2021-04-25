@@ -16,7 +16,7 @@
                     <button type="button" class="toggle-btn" onclick="register()">Register</button>
                 </div>
                 <form id="login" class="input-group" method="post" action="{{route('signin')}}">
-                    {{ csrf_field() }}
+                    @csrf
                     <input type="text" class="input-field" placeholder="User Name" required value="{{old('username')}}" name="username">
                     <input type="password" class="input-field" placeholder="Enter Password" required value="{{old('password')}}" name="password">
                     @if($errors->any())
