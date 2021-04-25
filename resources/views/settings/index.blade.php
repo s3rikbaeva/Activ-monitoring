@@ -17,7 +17,7 @@
             <div class="settings">
                 <div class="lang">{{ __('shared.change_lang') }}:</div>
                 <form method="post" action="{{route('localization', app()->getLocale())}}">
-                    {{ csrf_field() }}
+                    @csrf
                     <select name="local" class="minimal" id="" onchange="this.form.submit()">
                         <option value="en" @if(app()->getLocale()==='en') selected @endif>English</option>
                         <option value="ru" @if(app()->getLocale()==='ru') selected @endif>Русский</option>

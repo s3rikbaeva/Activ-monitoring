@@ -11,7 +11,7 @@
             </div>
             <div class="modal-body">
                 <form method="post" action="{{route('store', app()->getLocale())}}" style="margin-right:20px; display: block; margin-top: 30px">
-                    {{ csrf_field() }}
+                    @csrf
                     <label for="project" style="font-family: revert;font-size: 20px;line-height: 35px;display: flex;align-items: center;text-align: center;letter-spacing: 0.05em;text-transform: capitalize;color: rgba(0, 0, 0, 0.5);">Project</label>
                     <select name="project" id="project" class="minimal" style="margin-top: 10px;margin-left: 0 !important;background-color: rgba(0, 0, 0, 0.1);border-radius: 5px;">
                         <option value="mentorship">Mentorship</option>
@@ -79,7 +79,7 @@
 
     <div class="container">
         <form method="get" action="{{route('employees',app()->getLocale())}}" class="filter">
-            {{ csrf_field() }}
+            @csrf
             <div class="left-inner-addon input-container">
                 <img src="{{asset('images/search.svg')}}" width="37" height="37" alt="">
                 <input type="text"
